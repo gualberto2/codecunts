@@ -1,0 +1,10 @@
+/*For whole page */
+
+/*Grid */
+.grid {
+    display: grid;
+    grid-template: auto / 100px repeat(3, 1fr) 100px;
+    
+}
+
+/* */
