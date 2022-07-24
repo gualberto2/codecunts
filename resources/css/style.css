@@ -22,6 +22,10 @@ header div.navbar h1.title a {
         float: left;
         list-style-type: none;
       }
+    .navbar li a {
+        color: white;
+        list-style-type: none;
+    }
     
       .navbar ul {
         background-color: #282828;
