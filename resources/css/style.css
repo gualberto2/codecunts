@@ -11,10 +11,10 @@ ul {
 
 
 /*Nav */
-header {
-    display: inline-block;
+header div.navbar h1.title a {
+    display: block;
     background-color: #383838;    
-    margin: auto 30px;
+    margin: 0px;
     position: sticky;
     color:white;
 }
