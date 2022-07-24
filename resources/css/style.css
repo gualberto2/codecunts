@@ -1,10 +1,26 @@
 /*For whole page */
 
+/*Nav */
+.navbar {
+    display: inline-block;
+    background-color: white;    
+    margin: auto 30px;
+    
+}
+    ul.name-list {
+
+    }
+
 /*Grid */
 .grid {
     display: grid;
     grid-template: auto / 100px repeat(3, 1fr) 100px;
     
+}
+
+.title {
+    display: grid;
+    grid-column: 1 / 6;
 }
 
 /* */
