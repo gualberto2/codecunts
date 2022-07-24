@@ -11,19 +11,18 @@ ul {
 
 
 /*Nav */
-.navbar h1,
-ul {
+.navbar {
     display: inline-block;
-    background-color: white;    
+    background-color: #383838;    
     margin: auto 30px;
     position: sticky;
-    list-style-type: none;
 }
     .navbar li {
         float: left;
+        list-style-type: none;
       }
     
-      .navbar li, a {
+      .navbar li a {
         display: block;
         color: white;
         text-align: center;
