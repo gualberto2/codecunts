@@ -42,10 +42,4 @@ header div.navbar h1.title a {
     grid-template: auto / 100px repeat(3, 1fr) 100px;
     
 }
-
-.title {
-    display: grid;
-    grid-column: 1 / 6;
-}
-
 /* */
