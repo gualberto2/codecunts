@@ -1,11 +1,15 @@
 /*For whole page */
+ul {
+    list-style-type: none;
+}
+
 
 /*Nav */
-.navbar {
+p.title .navbar{
     display: inline-block;
     background-color: white;    
     margin: auto 30px;
-    
+    position: sticky;
 }
     ul.name-list {
 
