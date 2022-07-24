@@ -1,11 +1,17 @@
 /*For whole page */
+html,
+body {
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
 ul {
     list-style-type: none;
 }
 
 
 /*Nav */
-p.title .navbar{
+.navbar{
     display: inline-block;
     background-color: white;    
     margin: auto 30px;
