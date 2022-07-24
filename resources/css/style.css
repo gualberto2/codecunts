@@ -11,15 +11,24 @@ ul {
 
 
 /*Nav */
-.navbar{
+.navbar h1,
+ul {
     display: inline-block;
     background-color: white;    
     margin: auto 30px;
     position: sticky;
+    list-style-type: none;
 }
-    ul.name-list {
-
-    }
+    .navbar li {
+        float: left;
+      }
+    
+      .navbar li, a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
 
 /*Grid */
 .grid {
