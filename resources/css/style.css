@@ -13,11 +13,21 @@ ul {
 }
 
 
+/*Grid */
+.grid {
+    display: grid;
+    background-color: #BCB485;
+    grid-template: 120px 100px auto / 100px repeat(3, 1fr) 100px;
+}
+
+
+
 /*Nav */
 .gridbody {
     background-color: #bcb485
 }
-header {
+
+.gridheader {
     grid-column: 3 / 4;
     display: grid;
     background-color: #BCB485;
@@ -59,11 +69,6 @@ header {
     }
 
 
-/*Grid */
-.grid {
-    display: grid;
-    background-color: #BCB485;
-    grid-template: 120px 100px auto / 100px repeat(3, 1fr) 100px;
-}
+
 
 /* */
