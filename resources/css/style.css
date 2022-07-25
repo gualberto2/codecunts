@@ -11,6 +11,10 @@ ul {
 
 
 /*Nav */
+header {
+    background-color: #383838;
+}
+
 .grid-nav {
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr) 100px;
@@ -21,10 +25,12 @@ ul {
 
     .fullwidth {
         display: grid;
-        grid-column: 1 / 4;
-        
+        grid-column: 3 / 4;
     }
 
+    .nameanchor {
+        grid-column: 2 / 5;
+    }
 
 /*Grid */
 .grid {
