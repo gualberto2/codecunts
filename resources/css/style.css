@@ -11,6 +11,21 @@ ul {
 
 
 /*Nav */
+header {
+    grid-column: 3 / 4;
+    display: grid;
+}
+
+.title {
+    margin: auto;
+    color: #F5F5F5;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+
+
+
 .grid-nav {
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr) 100px;
