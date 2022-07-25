@@ -11,6 +11,9 @@ ul {
 
 
 /*Nav */
+.gridstuff {
+    background-color: #bcb485
+}
 header {
     grid-column: 3 / 4;
     display: grid;
