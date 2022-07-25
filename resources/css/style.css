@@ -29,6 +29,8 @@ header {
     }
 
     .artp {
+        box-sizing: border-box;
+        border: 1px solid transparent;
         grid-row: 2 / 3;
         grid-column: 2 / 3;
         margin: auto;
@@ -36,6 +38,8 @@ header {
     }
 
     .benp {
+        box-sizing: border-box;
+        border: 1px solid transparent;
         grid-row: 2 / 3;
         grid-column: 3 / 4;
         margin: auto;
@@ -43,6 +47,8 @@ header {
     }
 
     .elip {
+        box-sizing: border-box;
+        border: 1px solid transparent;
         grid-row: 2 / 3;
         grid-column: 4 / 5;
         margin: auto;
