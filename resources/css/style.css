@@ -3,6 +3,9 @@ html,
 body {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    background-color: #BCB485;
+    grid-template: 120px 100px auto / 100px repeat(3, 1fr) 100px;
 }
 
 ul {
@@ -11,7 +14,7 @@ ul {
 
 
 /*Nav */
-body {
+.gridbody {
     background-color: #bcb485
 }
 header {
@@ -59,6 +62,7 @@ header {
 /*Grid */
 .grid {
     display: grid;
+    background-color: #BCB485;
     grid-template: 120px 100px auto / 100px repeat(3, 1fr) 100px;
 }
 
