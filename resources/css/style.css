@@ -36,7 +36,6 @@ ul {
 
     div.nameanchor {
         display: grid;
-        grid-column: 2 / 5;
         text-decoration: none;
         grid-row: auto / auto;
     }
@@ -46,6 +45,7 @@ ul {
             margin: auto;
             font-size: 50px;
             color: #F5F5F5;
+            grid-column: 2 / 3;
         }
         .name2 {
             text-decoration: none;
@@ -53,6 +53,7 @@ ul {
             margin: auto;
             font-size: 50px;
             color: #F5F5F5;
+            grid-column: 3 / 4;
         }
         .name3 {
             text-decoration: none;
@@ -60,6 +61,7 @@ ul {
             margin: auto;
             font-size: 50px;
             color: #F5F5F5;
+            grid-column: 4 / 5;
         }
             .name a {
 
