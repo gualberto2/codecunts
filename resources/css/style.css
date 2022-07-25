@@ -34,7 +34,7 @@ ul {
             color: #F5F5F5;
         }
 
-    div.nameanchor {
+    div.underfullwidth {
         display: grid;
         text-decoration: none;
         grid-row: auto / auto;
@@ -61,7 +61,7 @@ ul {
             margin: auto;
             font-size: 50px;
             color: #F5F5F5;
-            grid-column: 4 / 5;
+            grid-column: 4  / 5;
         }
             .name a {
 
