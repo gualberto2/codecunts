@@ -1,4 +1,9 @@
 /*For whole page */
+html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
 html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
