@@ -19,6 +19,12 @@ ul {
     justify-items: center;
 }
 
+    .fullwidth {
+        display: grid;
+        grid-column: 1 / 4;
+        
+    }
+
 
 /*Grid */
 .grid {
