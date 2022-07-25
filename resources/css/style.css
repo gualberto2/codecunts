@@ -2,9 +2,6 @@
 html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    display: grid;
-    background-color: #BCB485;
-    grid-template: 120px 100px auto / 100px repeat(3, 1fr) 100px;
 }
 
 ul {
@@ -14,36 +11,25 @@ ul {
 
 
 /*Nav */
-.gridbody {
-    background-color: #bcb485
-}
-
-    .title {
-        grid-row: 1 / 2;
-        color: #F5F5F5;
-        font-size: 80px;
-        font-weight: 300;
+.parent {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr) 100px;
+    grid-template-rows: 120px 90px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+        .name1 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
 
-    .artp {
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-        color: #F5F5F5
-    }
+    .div2 { grid-area: 2 / 1 / 3 / 6; }
+        .name2 {}
 
-    .benp {
-        grid-row: 2 / 3;
-        grid-column: 3 / 4;
-        color: #F5F5F5;
-    }
-
-    .elip {
-        grid-row: 2 / 3;
-        grid-column: 4 / 5;
-        color: #F5F5F5;
-    }
-
-
+    .div3 { grid-area: 3 / 1 / 4 / 6; }
+        .name3 {}
 
 
 /* */
