@@ -18,12 +18,6 @@ ul {
     background-color: #bcb485
 }
 
-.gridheader {
-    grid-column: 3 / 4;
-    display: grid;
-    background-color: #BCB485;
-}
-
     .title {
         grid-row: 1 / 2;
         color: #F5F5F5;
