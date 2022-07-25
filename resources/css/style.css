@@ -40,6 +40,7 @@ ul {
         grid-row: auto / auto;
     }
         .name1 {
+            display: grid;
             text-decoration: none;
             grid-row: auto / auto;
             margin: auto;
@@ -48,6 +49,7 @@ ul {
             grid-column: 2 / 3;
         }
         .name2 {
+            display: grid;
             text-decoration: none;
             grid-row: auto / auto;
             margin: auto;
@@ -56,6 +58,7 @@ ul {
             grid-column: 3 / 4;
         }
         .name3 {
+            display: grid;
             text-decoration: none;
             grid-row: auto / auto;
             margin: auto;
