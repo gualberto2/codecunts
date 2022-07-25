@@ -17,7 +17,6 @@ ul {
 .grid {
     display: grid;
     background-color: #BCB485;
-    grid-template: 120px 100px auto / 100px repeat(3, 1fr) 100px;
 }
 
 
@@ -35,36 +34,26 @@ ul {
 
     .title {
         grid-row: 1 / 2;
-        margin: auto;
         color: #F5F5F5;
         font-size: 80px;
         font-weight: 300;
     }
 
     .artp {
-        box-sizing: border-box;
-        border: 1px solid transparent;
         grid-row: 2 / 3;
         grid-column: 2 / 3;
-        margin: auto;
         color: #F5F5F5
     }
 
     .benp {
-        box-sizing: border-box;
-        border: 1px solid transparent;
         grid-row: 2 / 3;
         grid-column: 3 / 4;
-        margin: auto;
         color: #F5F5F5;
     }
 
     .elip {
-        box-sizing: border-box;
-        border: 1px solid transparent;
         grid-row: 2 / 3;
         grid-column: 4 / 5;
-        margin: auto;
         color: #F5F5F5;
     }
 
