@@ -11,30 +11,14 @@ ul {
 
 
 /*Nav */
-header div.navbar h1.title a {
-    display: block;
-    background-color: #383838;    
-    margin: 0px;
-    position: sticky;
-    color:white;
+.grid-nav {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr) 100px;
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
 }
-    .navbar li {
-        float: left;
-        list-style-type: none;
-      }
-    .navbar li a {
-        color: white;
-        list-style-type: none;
-    }
-    
-      .navbar ul {
-        background-color: #282828;
-        display: block;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        list-style-type: none;
-      }
+
 
 /*Grid */
 .grid {
