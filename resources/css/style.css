@@ -1,6 +1,5 @@
 /*For whole page */
-html,
-body {
+html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     display: grid;
