@@ -7,7 +7,11 @@ html, body , .container {
 html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #BCB485;
+    background: hsla(51, 29%, 63%, 1);
+    background: linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(51, 62%, 68%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(51, 62%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(51, 62%, 68%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BCB485", endColorstr="#E0D179", GradientType=1 );
 }
 
 ul {
@@ -55,7 +59,7 @@ h3 {
   .Arthur { 
     grid-area: 2 / 2 / 3 / 3; 
 }
-    .arthur,
+    .Arthur,
     .ArthurContent {
         background-color: #F5F5F5;
     }
