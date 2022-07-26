@@ -28,18 +28,37 @@ h3 {
     gap: 0px 30px;
     grid-auto-flow: row;
   }
+
+  .head {
+    background-color: #383838;
+  }
+    .subhead {
+        background-color:
+    }
   
   .Ben { 
     grid-area: 2 / 3 / 3 / 4; 
 }
+    .Ben,
+    .BenContent {
+        background-color: #F5F5F5;
+    }
   
   .Elijah { 
     grid-area: 2 / 4 / 3 / 5; 
 }
+    .Elijah,
+    .ElijahContent {
+        background-color: #F5F5F5;
+    }
   
   .Arthur { 
     grid-area: 2 / 2 / 3 / 3; 
 }
+    .arthur,
+    .ArthurContent {
+        background-color: #F5F5F5;
+    }
   
   .Title { 
     grid-area: 1 / 3 / 2 / 4; 
