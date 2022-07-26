@@ -1,45 +1,84 @@
 /*For whole page */
-html,
-body {
+html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+
+html {
     font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #BCB485;
 }
 
 ul {
     list-style-type: none;
 }
 
+h1,
+h3 {
+    text-align: center;
+    font-family: ;
+}
+
 
 /*Nav */
-header div.navbar h1.title a {
-    display: block;
-    background-color: #383838;    
-    margin: 0px;
-    position: sticky;
-    color:white;
+.container {  display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    grid-template-rows: 120px 90px 1fr 5%;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+  }
+  
+  .Ben { 
+    grid-area: 2 / 3 / 3 / 4; 
 }
-    .navbar li {
-        float: left;
-        list-style-type: none;
-      }
-    .navbar li a {
-        color: white;
-        list-style-type: none;
-    }
-    
-      .navbar ul {
-        background-color: #282828;
-        display: block;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        list-style-type: none;
-      }
-
-/*Grid */
-.grid {
-    display: grid;
-    grid-template: auto / 100px repeat(3, 1fr) 100px;
-    
+  
+  .Elijah { 
+    grid-area: 2 / 4 / 3 / 5; 
 }
+  
+  .Arthur { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+  
+  .Title { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+  
+  .Head {
+     grid-area: 1 / 1 / 2 / 6;
+ }
+  
+  .subhead { 
+    grid-area: 2 / 1 / 3 / 6; 
+}
+  
+  .ArthurContent { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+  
+  .BenContent {
+     grid-area: 3 / 3 / 4 / 4; 
+}
+  
+  .ElijahContent { 
+    grid-area: 3 / 4 / 4 / 5;
+ }
+  
+  .contentright { 
+    grid-area: 3 / 5 / 4 / 6; 
+}
+  
+  .contentleft { 
+    grid-area: 3 / 1 / 4 / 2; 
+}
+  
+  .mainrow { 
+    grid-area: 3 / 1 / 4 / 6; 
+}
+  
+  .footer { 
+    grid-area: 4 / 1 / 5 / 6; 
+}
+  
 /* */
