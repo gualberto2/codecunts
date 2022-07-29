@@ -39,6 +39,7 @@ h3 {
   }
 
   .Head {
+    margin-bottom: 20px;
     background: hsla(0, 0%, 97%, 1);
 
     background: linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
@@ -50,15 +51,7 @@ h3 {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7F7F7", endColorstr="#FCFCFC", GradientType=1 );
   }
     .subhead {
-        background: hsla(0, 0%, 20%, 1);
 
-        background: linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
-        
-        background: -moz-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
-        
-        background: -webkit-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
-        
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#333333", endColorstr="#474747", GradientType=1 );;
     }
   
   .Ben { 
