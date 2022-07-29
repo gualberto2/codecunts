@@ -7,15 +7,15 @@ html, body , .container {
 html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    background: hsla(51, 29%, 63%, 1);
+    background: hsla(0, 0%, 20%, 1);
 
-    background: linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(57, 61%, 59%, 1) 52%, hsla(60, 88%, 58%, 1) 100%);
+    background: linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
     
-    background: -moz-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(57, 61%, 59%, 1) 52%, hsla(60, 88%, 58%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
     
-    background: -webkit-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(57, 61%, 59%, 1) 52%, hsla(60, 88%, 58%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
     
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BCB485", endColorstr="#D6D058", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#333333", endColorstr="#474747", GradientType=1 );
 }
 
 ul {
@@ -39,7 +39,15 @@ h3 {
   }
 
   .Head {
-    background-color: #383838;
+    background: hsla(0, 0%, 20%, 1);
+
+    background: linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
+    
+    background: -moz-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
+    
+    background: -webkit-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#333333", endColorstr="#474747", GradientType=1 );
   }
     .subhead {
         background: hsla(0, 0%, 20%, 1);
