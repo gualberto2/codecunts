@@ -8,10 +8,14 @@ html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     background: hsla(51, 29%, 63%, 1);
-    background: linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(51, 62%, 68%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(51, 62%, 68%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(51, 62%, 68%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BCB485", endColorstr="#E0D179", GradientType=1 );
+
+    background: linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(57, 61%, 59%, 1) 52%, hsla(60, 88%, 58%, 1) 100%);
+    
+    background: -moz-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(57, 61%, 59%, 1) 52%, hsla(60, 88%, 58%, 1) 100%);
+    
+    background: -webkit-linear-gradient(225deg, hsla(51, 29%, 63%, 1) 0%, hsla(57, 61%, 59%, 1) 52%, hsla(60, 88%, 58%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BCB485", endColorstr="#D6D058", GradientType=1 );
 }
 
 ul {
@@ -26,7 +30,8 @@ h3 {
 
 
 /*Nav */
-.container {  display: grid;
+.container { 
+     display: grid;
     grid-template-columns: 100px 1fr 1fr 1fr 100px;
     grid-template-rows: 120px 90px 1fr 5%;
     gap: 0px 30px;
@@ -37,7 +42,15 @@ h3 {
     background-color: #383838;
   }
     .subhead {
-        background-color: 
+        background: hsla(0, 0%, 20%, 1);
+
+        background: linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
+        
+        background: -moz-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
+        
+        background: -webkit-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
+        
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#333333", endColorstr="#474747", GradientType=1 );;
     }
   
   .Ben { 
