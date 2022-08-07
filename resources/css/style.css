@@ -96,19 +96,16 @@ h3 {
   .ArthurContent { 
     grid-area: 3 / 2 / 4 / 3; 
     color:hsla(0, 0%, 20%, 1);
-    text-align: center;
 }
   
   .BenContent {
      grid-area: 3 / 3 / 4 / 4; 
      color:hsla(0, 0%, 20%, 1);
-     text-align: center;
 }
   
   .ElijahContent { 
     grid-area: 3 / 4 / 4 / 5;
     color:hsla(0, 0%, 20%, 1);
-    text-align: center;
  }
   
   .contentright { 
