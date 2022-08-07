@@ -114,8 +114,8 @@ h3 {
     color:hsla(0, 0%, 20%, 1);
 }
     .ArthurContent p {
-        word-spacing: 2px;
-        line-height: 4cm;
+        word-spacing: 4px;
+        line-height: 1.4;
         padding-right: 4%;
         padding-left: 4%;
     }
