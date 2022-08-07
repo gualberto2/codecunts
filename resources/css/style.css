@@ -8,13 +8,9 @@ html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     background: hsla(0, 0%, 20%, 1);
-
     background: linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
-    
     background: -moz-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
-    
     background: -webkit-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
-    
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#333333", endColorstr="#474747", GradientType=1 );
 }
 
@@ -27,9 +23,6 @@ h3 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
-
-
-/*Nav */
 .container { 
      display: grid;
     grid-template-columns: 105 1fr 1fr 1fr 10%;
@@ -38,49 +31,59 @@ h3 {
     grid-auto-flow: row;
   }
 
+
+/* head and subhead css */
   .Head {
     margin-bottom: 20px;
     background: hsla(0, 0%, 97%, 1);
-
     background: linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
-    
     background: -moz-linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
-    
     background: -webkit-linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
-    
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7F7F7", endColorstr="#FCFCFC", GradientType=1 );
   }
     .subhead {
 
     }
   
-  .Ben { 
+
+/* individual cards */
+.Ben { 
     grid-area: 2 / 3 / 3 / 4; 
+}  
+
+.Elijah { 
+    grid-area: 2 / 4 / 3 / 5; 
+} 
+
+.Arthur { 
+    grid-area: 2 / 2 / 3 / 3; 
 }
+/* general card css */
+
     .Ben,
     .BenContent,
     .ben-image {
         background-color: #F5F5F5;
+        justify-content: space-evenly;
     }
   
-  .Elijah { 
-    grid-area: 2 / 4 / 3 / 5; 
-}
+
     .Elijah,
     .ElijahContent,
     .elijah-image {
         background-color: #F5F5F5;
+        justify-content: space-evenly;
     }
   
-  .Arthur { 
-    grid-area: 2 / 2 / 3 / 3; 
-}
+
     .Arthur,
     .ArthurContent,
     .arthur-image {
         background-color: #F5F5F5;
+        justify-content: space-evenly;
     }
-  
+
+ /* title and sub head*/
   .Title { 
     grid-area: 1 / 3 / 2 / 4; 
 }
@@ -92,19 +95,26 @@ h3 {
   .subhead { 
     grid-area: 2 / 1 / 3 / 6; 
 }
-  
+
+/* content cards, holds plain text, images, etc. */
   .ArthurContent { 
     grid-area: 3 / 2 / 4 / 3; 
+    color:hsla(0, 0%, 20%, 1);
+    text-align: center;
     color:hsla(0, 0%, 20%, 1);
 }
   
   .BenContent {
      grid-area: 3 / 3 / 4 / 4; 
      color:hsla(0, 0%, 20%, 1);
+     text-align: center;
+     color:hsla(0, 0%, 20%, 1);
 }
   
   .ElijahContent { 
     grid-area: 3 / 4 / 4 / 5;
+    color:hsla(0, 0%, 20%, 1);
+    text-align: center;
     color:hsla(0, 0%, 20%, 1);
  }
   
@@ -115,31 +125,25 @@ h3 {
   .contentleft { 
     grid-area: 3 / 1 / 4 / 2; 
 }
-  
+  /* general content row / container row */
   .mainrow { 
     grid-area: 3 / 1 / 4 / 6; 
 }
+
+/* image row */
     .image-row { 
     grid-area: 4 / 1 / 5 / 6; 
 }
     .arthur-image {
      grid-area: 4 / 2 / 5 / 3;
      }
-        .arthur-image p {
-            color:hsla(0, 0%, 20%, 1);
-        }
     .elijah-image { 
     grid-area: 4 / 3 / 5 / 4; 
     }
-        .elijah-image p {
-        color:hsla(0, 0%, 20%, 1);
-        }
     .ben-image {
      grid-area: 4 / 4 / 5 / 5; 
     }
-        .ben-image p {
-        color:hsla(0, 0%, 20%, 1);
-        }
+/**/
   .footer { 
     grid-area: 4 / 1 / 5 / 6; 
 }
