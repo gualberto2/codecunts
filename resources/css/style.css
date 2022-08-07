@@ -58,7 +58,8 @@ h3 {
     grid-area: 2 / 3 / 3 / 4; 
 }
     .Ben,
-    .BenContent {
+    .BenContent,
+    .ben-image {
         background-color: #F5F5F5;
     }
   
@@ -66,7 +67,8 @@ h3 {
     grid-area: 2 / 4 / 3 / 5; 
 }
     .Elijah,
-    .ElijahContent {
+    .ElijahContent,
+    .elijah-image {
         background-color: #F5F5F5;
     }
   
@@ -74,7 +76,8 @@ h3 {
     grid-area: 2 / 2 / 3 / 3; 
 }
     .Arthur,
-    .ArthurContent {
+    .ArthurContent,
+    .arthur-image {
         background-color: #F5F5F5;
     }
   
@@ -92,14 +95,20 @@ h3 {
   
   .ArthurContent { 
     grid-area: 3 / 2 / 4 / 3; 
+    color:hsla(0, 0%, 20%, 1);
+    text-align: center;
 }
   
   .BenContent {
      grid-area: 3 / 3 / 4 / 4; 
+     color:hsla(0, 0%, 20%, 1);
+     text-align: center;
 }
   
   .ElijahContent { 
     grid-area: 3 / 4 / 4 / 5;
+    color:hsla(0, 0%, 20%, 1);
+    text-align: center;
  }
   
   .contentright { 
