@@ -113,6 +113,9 @@ h3 {
     text-align: center;
     color:hsla(0, 0%, 20%, 1);
 }
+    .ArthurContent p {
+        word-spacing: 2px;
+    }
 
   .BenContent {
      grid-area: 3 / 3 / 4 / 4; 
