@@ -80,7 +80,14 @@ h3 {
     .ArthurContent,
     .arthur-image {
         background-color: #F5F5F5;
-        justify-content: space-evenly;
+        /*justify-content: space-evenly;*/
+    }
+
+/*Below I will be adding some css styles to order items in my portfolio card*/
+
+    .arthur-services-offered {
+      display: flex;
+      justify-content: space-around;
     }
 
  /* title and sub head*/
