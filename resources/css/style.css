@@ -102,10 +102,6 @@ h3 {
 
 /*Below I will be adding some css styles to order items in my portfolio card*/
 
-    .arthur-services-offered {
-      display: flex;
-      justify-content: space-around;
-    }
 /* content cards, holds plain text, images, etc. */
   .ArthurContent { 
     grid-area: 3 / 2 / 4 / 3; 
