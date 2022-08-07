@@ -3,7 +3,6 @@ html, body , .container {
     height: 100%;
     margin: 0;
   }
-
 html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -13,11 +12,9 @@ html {
     background: -webkit-linear-gradient(135deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 28%, 1) 51%, hsla(0, 0%, 32%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#333333", endColorstr="#474747", GradientType=1 );
 }
-
 ul {
     list-style-type: none;
 }
-
 h1,
 h3 {
     text-align: center;
@@ -25,13 +22,11 @@ h3 {
 }
 .container { 
      display: grid;
-    grid-template-columns: 105 1fr 1fr 1fr 10%;
-    grid-template-rows: 13%  10% 1fr 18% 5%;
+    grid-template-columns: minmax(2%, 10%) minmax(23%, 1fr) minmax(23%, 1fr) minmax(23%, 1fr) minmax(2%, 10%);
+    grid-template-rows: minmax(13%, 13%) minmax( 10%, 10%) minmax(30%, 1fr) min(18%, 18%) minmax(4.86%, 5%);
     gap: 0px 39px;
     grid-auto-flow: row;
   }
-
-
 /* head and subhead css */
   .Head {
     margin-bottom: 20px;
@@ -44,22 +39,44 @@ h3 {
     .subhead {
 
     }
-  
 
-/* individual cards */
+/* Grid areas */
+.Title { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+.Head {
+     grid-area: 1 / 1 / 2 / 6;
+ }
+.subhead { 
+    grid-area: 2 / 1 / 3 / 6; 
+}
 .Ben { 
     grid-area: 2 / 3 / 3 / 4; 
 }  
-
 .Elijah { 
     grid-area: 2 / 4 / 3 / 5; 
 } 
-
 .Arthur { 
     grid-area: 2 / 2 / 3 / 3; 
 }
-/* general card css */
+.mainrow { 
+    grid-area: 3 / 1 / 4 / 6; 
+}
+.image-row { 
+    grid-area: 4 / 1 / 5 / 6; 
+}
+.arthur-image {
+    grid-area: 4 / 2 / 5 / 3;
+}
+.elijah-image { 
+    grid-area: 4 / 3 / 5 / 4; 
+}
+.ben-image {
+    grid-area: 4 / 4 / 5 / 5; 
+}
+/* individual cards */
 
+/* general portfolio card css */
     .Ben,
     .BenContent,
     .ben-image {
@@ -82,20 +99,6 @@ h3 {
         background-color: #F5F5F5;
         justify-content: space-evenly;
     }
-
- /* title and sub head*/
-  .Title { 
-    grid-area: 1 / 3 / 2 / 4; 
-}
-  
-  .Head {
-     grid-area: 1 / 1 / 2 / 6;
- }
-  
-  .subhead { 
-    grid-area: 2 / 1 / 3 / 6; 
-}
-
 /* content cards, holds plain text, images, etc. */
   .ArthurContent { 
     grid-area: 3 / 2 / 4 / 3; 
@@ -103,7 +106,7 @@ h3 {
     text-align: center;
     color:hsla(0, 0%, 20%, 1);
 }
-  
+
   .BenContent {
      grid-area: 3 / 3 / 4 / 4; 
      color:hsla(0, 0%, 20%, 1);
@@ -117,35 +120,15 @@ h3 {
     text-align: center;
     color:hsla(0, 0%, 20%, 1);
  }
-  
+
   .contentright { 
     grid-area: 3 / 5 / 4 / 6; 
 }
-  
   .contentleft { 
     grid-area: 3 / 1 / 4 / 2; 
 }
-  /* general content row / container row */
-  .mainrow { 
-    grid-area: 3 / 1 / 4 / 6; 
-}
 
-/* image row */
-    .image-row { 
-    grid-area: 4 / 1 / 5 / 6; 
-}
-    .arthur-image {
-     grid-area: 4 / 2 / 5 / 3;
-     }
-    .elijah-image { 
-    grid-area: 4 / 3 / 5 / 4; 
-    }
-    .ben-image {
-     grid-area: 4 / 4 / 5 / 5; 
-    }
-/**/
+/* footer */
   .footer { 
     grid-area: 4 / 1 / 5 / 6; 
 }
-  
-/* */
