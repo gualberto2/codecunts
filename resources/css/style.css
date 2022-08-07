@@ -1,4 +1,13 @@
 /*For whole page */
+@font-face {
+  font-family: "Albert_Sans_Light";
+  src: url(../fonts/Albert_Sans/AlbertSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Source_Code_Pro";
+  src: url(../fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+
 html, body , .container {
     height: 100%;
     margin: 0;
@@ -88,7 +97,7 @@ h3 {
     color:hsla(0, 0%, 20%, 1);
 }
     .arthur-services-offered {
-      font-family:'Courier New', Courier, monospace;
+      font-family:;
     }
     .ArthurContent p {
         word-spacing: 4px;
@@ -116,6 +125,12 @@ h3 {
 }
   .contentleft { 
     grid-area: 3 / 1 / 4 / 2; 
+}
+
+.ArthurContent p,
+.BenContent p,
+.ElijahContent p {
+  font-family: "Albert"
 }
 
 /* footer */
