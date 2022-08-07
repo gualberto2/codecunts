@@ -87,6 +87,9 @@ h3 {
     text-align: center;
     color:hsla(0, 0%, 20%, 1);
 }
+    .arthur-services-offered {
+      font-family:'Courier New', Courier, monospace;
+    }
     .ArthurContent p {
         word-spacing: 4px;
         line-height: 1.4;
