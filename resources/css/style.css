@@ -33,7 +33,7 @@ h3 {
 .container { 
      display: grid;
     grid-template-columns: 100px 1fr 1fr 1fr 100px;
-    grid-template-rows: 120px 90px 1fr 5%;
+    grid-template-rows: 120px  90px 1fr 5%;
     gap: 0px 39px;
     grid-auto-flow: row;
   }
@@ -113,7 +113,27 @@ h3 {
   .mainrow { 
     grid-area: 3 / 1 / 4 / 6; 
 }
-  
+    .image-row { 
+    grid-area: 4 / 1 / 5 / 6; 
+}
+    .arthur-image {
+     grid-area: 4 / 2 / 5 / 3;
+     }
+        .arthur-image p {
+            color:hsla(0, 0%, 20%, 1);
+        }
+    .elijah-image { 
+    grid-area: 4 / 3 / 5 / 4; 
+    }
+        .elijah-image p {
+        color:hsla(0, 0%, 20%, 1);
+        }
+    .ben-image {
+     grid-area: 4 / 4 / 5 / 5; 
+    }
+        .ben-image p {
+        color:hsla(0, 0%, 20%, 1);
+        }
   .footer { 
     grid-area: 4 / 1 / 5 / 6; 
 }
