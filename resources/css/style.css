@@ -32,8 +32,8 @@ h3 {
 /*Nav */
 .container { 
      display: grid;
-    grid-template-columns: 100px 1fr 1fr 1fr 100px;
-    grid-template-rows: 120px  90px 1fr 5%;
+    grid-template-columns: 105 1fr 1fr 1fr 10%;
+    grid-template-rows: 13%  10% 1fr 18% 5%;
     gap: 0px 39px;
     grid-auto-flow: row;
   }
