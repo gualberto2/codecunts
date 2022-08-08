@@ -27,7 +27,7 @@ ul {
 h1,
 h2 {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Sans_Code_Pro", 'Times New Roman', Times, serif;
 }
 .container { 
      display: grid;
@@ -99,6 +99,7 @@ h2 {
     color:hsla(0, 0%, 20%, 1);
 }
     .arthur-services-offered {
+
     }
     .ArthurContent p {
         word-spacing: 4px;
