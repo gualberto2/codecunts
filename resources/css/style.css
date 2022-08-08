@@ -31,8 +31,10 @@ h3 {
 }
 .container { 
      display: grid;
+     /* GRID */
     grid-template-columns: minmax(2%, 10%) minmax(23%, 1fr) minmax(23%, 1fr) minmax(23%, 1fr) minmax(2%, 10%);
     grid-template-rows: minmax(13%, 13%) minmax( 10%, 10%) minmax(30%, 1fr) min(18%, 18%) minmax(4.86%, 5%);
+         /* GRID */
     gap: 0px 39px;
     grid-auto-flow: row;
   }
@@ -97,9 +99,9 @@ h3 {
     color:hsla(0, 0%, 20%, 1);
 }
     .arthur-services-offered {
-      font-family:;
     }
     .ArthurContent p {
+        font-family: "Albert_Sans_Light";
         word-spacing: 4px;
         line-height: 1.4;
         padding-right: 4%;
