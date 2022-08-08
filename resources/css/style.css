@@ -70,7 +70,7 @@ h2 {
     .BenContent,
     .ben-image {
         background-color: #F5F5F5;
-        justify-content: space-evenly;
+
     }
   
 
@@ -78,7 +78,7 @@ h2 {
     .ElijahContent,
     .elijah-image {
         background-color: #F5F5F5;
-        justify-content: space-evenly;
+
     }
   
 
@@ -86,7 +86,7 @@ h2 {
     .ArthurContent,
     .arthur-image {
         background-color: #F5F5F5;
-        justify-content: space-evenly;
+
     }
 
 /*Below I will be adding some css styles to order items in my portfolio card*/
