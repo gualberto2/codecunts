@@ -25,7 +25,7 @@ ul {
     list-style-type: none;
 }
 h1,
-h3 {
+h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -101,7 +101,6 @@ h3 {
     .arthur-services-offered {
     }
     .ArthurContent p {
-        font-family: "Albert_Sans_Light";
         word-spacing: 4px;
         line-height: 1.4;
         padding-right: 4%;
