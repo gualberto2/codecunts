@@ -43,6 +43,7 @@ h2 {
 /* head and subhead css */
   .Head {
     margin-bottom: 20px;
+    display: grid;
     background: hsla(0, 0%, 97%, 1);
     background: linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
     background: -moz-linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
@@ -72,7 +73,7 @@ h2 {
     .BenContent,
     .ben-image {
         background-color: #F5F5F5;
-
+        display: grid;
     }
   
 
@@ -80,7 +81,7 @@ h2 {
     .ElijahContent,
     .elijah-image {
         background-color: #F5F5F5;
-
+        display: grid;
     }
   
 
@@ -88,7 +89,7 @@ h2 {
     .ArthurContent,
     .arthur-image {
         background-color: #F5F5F5;
-
+        display: grid;
     }
 
 /*Below I will be adding some css styles to order items in my portfolio card*/
@@ -99,6 +100,7 @@ h2 {
     color:hsla(0, 0%, 20%, 1);
     text-align: center;
     color:hsla(0, 0%, 20%, 1);
+    display: grid;
 }
     .arthur-services-offered {
 
@@ -115,6 +117,7 @@ h2 {
      color:hsla(0, 0%, 20%, 1);
      text-align: center;
      color:hsla(0, 0%, 20%, 1);
+     display: grid;
 }
   
   .ElijahContent { 
@@ -122,6 +125,7 @@ h2 {
     color:hsla(0, 0%, 20%, 1);
     text-align: center;
     color:hsla(0, 0%, 20%, 1);
+    display: grid;
  }
 
   .contentright { 
@@ -141,15 +145,19 @@ h2 {
   padding-left: 4%;
   z-index: 1;
   font-size: 15px;
+  display: grid;
 }
 
 .arthur-bio p,
 .ben-bio p,
 .elijah-biop {
   z-index: 1;
+  display: grid;
+  margin: auto;
 }
 
 /* footer */
   .footer { 
     grid-area: 4 / 1 / 5 / 6; 
+    display: grid;
 }
