@@ -82,7 +82,6 @@ h2 {
     .elijah-image {
         background-color: #F5F5F5;
         display: grid;
-        min-height
     }
   
 
@@ -155,6 +154,8 @@ h2 {
   z-index: 1;
   display: grid;
   margin: auto;
+  max-width: 90%;
+  max-height: fit-content;
 }
 
 .arthur-image,
