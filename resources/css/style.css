@@ -101,13 +101,13 @@ h2 {
     .arthur-services-offered {
 
     }
-    .ArthurContent p {
+  /*  .ArthurContent p {
         word-spacing: 4px;
         line-height: 1.4;
         padding-right: 4%;
         padding-left: 4%;
     }
-
+*/
   .BenContent {
      grid-area: 3 / 3 / 4 / 4; 
      color:hsla(0, 0%, 20%, 1);
@@ -133,6 +133,10 @@ h2 {
 .BenContent p,
 .ElijahContent p {
   font-family: "Albert_Sans_Light"; 
+  word-spacing: 4px;
+  line-height: 1.4;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
 /* footer */
