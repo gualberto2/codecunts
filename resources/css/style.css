@@ -29,17 +29,7 @@ h2 {
     text-align: center;
     font-family: "Sans_Code_Pro", 'Times New Roman', Times, serif;
 }
-.container { 
-     display: grid;
-     /* GRID */
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
-    grid-template-rows: 13% 10% 1fr 18% 5%;
-     /* GRID */
-    gap: 0px 39px;
-    grid-auto-flow: row;
-    height: 100vh;
-    width: 100%;
-  }
+
 /* head and subhead css */
   .Head {
     margin-bottom: 20px;
@@ -55,17 +45,44 @@ h2 {
     }
 
 /* Grid areas */
-.Title { grid-area: 1 / 3 / 2 / 4; }
-.Head {grid-area: 1 / 1 / 2 / 6;}
-.subhead { grid-area: 2 / 1 / 3 / 6;}
-.Ben { grid-area: 2 / 3 / 3 / 4; }  
-.Elijah { grid-area: 2 / 4 / 3 / 5; } 
-.Arthur { grid-area: 2 / 2 / 3 / 3; }
-.mainrow { grid-area: 3 / 1 / 4 / 6; }
-.image-row { grid-area: 4 / 1 / 5 / 6; }
-.arthur-image {grid-area: 4 / 2 / 5 / 3;}
-.elijah-image { grid-area: 4 / 3 / 5 / 4; }
-.ben-image {grid-area: 4 / 4 / 5 / 5; }
+.container {  display: grid;
+  grid-template-columns: minmax(3%, 82px) minmax(15%, 1fr) minmax(15%, 1fr) minmax(15%, 1fr) minmax(3%, 82px);
+  grid-template-rows: minmax(30px, 120px) minmax(20px, 90px) minmax(30%, 1fr) minmax(20%, 100px) 0.25fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 3%;
+  grid-auto-flow: column;
+}
+.Head { grid-area: 1 / 1 / 2 / 6; }
+.Subhead { grid-area: 2 / 1 / 3 / 6; }
+.Body { grid-area: 3 / 1 / 5 / 6; }
+.Footer { grid-area: 5 / 1 / 6 / 6; }
+.Footer-content { grid-area: 5 / 2 / 6 / 5; }
+.Footer-Content-Middle { grid-area: 5 / 3 / 6 / 4; }
+.Footer-Content-Right {justify-self: end;
+  align-self: stretch;
+  grid-area: 5 / 4 / 6 / 5;}
+.Arthur-Subhead { grid-area: 2 / 2 / 3 / 3; }
+.Head-Title { grid-area: 1 / 3 / 2 / 4; }
+.Elijah-Subhead { grid-area: 2 / 4 / 3 / 5; }
+.Ben-Subhead { grid-area: 2 / 3 / 3 / 4; }
+.Future-Projects-Tab { grid-area: 1 / 2 / 2 / 3; }
+.Future-Services-Tab { grid-area: 1 / 4 / 2 / 5; }
+.Arthur-Container { grid-area: 3 / 2 / 5 / 3; }
+.Ben-Container { grid-area: 3 / 3 / 5 / 4; }
+.Elijah-Container { grid-area: 3 / 4 / 5 / 5; }
+.Elijah-Bio { grid-area: 3 / 4 / 4 / 5; }
+.Ben-Bio { grid-area: 3 / 3 / 4 / 4; }
+.Arthur-Bio { grid-area: 3 / 2 / 4 / 3; }
+.Arthur-image { grid-area: 4 / 2 / 5 / 3; }
+.Ben-Image { grid-area: 4 / 3 / 5 / 4; }
+.Elijah-Image { grid-area: 4 / 4 / 5 / 5; }
+.Footer-Content-Left {
+  justify-self: start;
+  align-self: stretch;
+  grid-area: 5 / 2 / 6 / 3;
+}
+
 /* individual cards */
 
 /* general portfolio card css */
