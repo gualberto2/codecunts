@@ -86,28 +86,11 @@ h2 {
 /* individual cards */
 
 /* general portfolio card css */
-    .Ben,
-    .BenContent,
-    .ben-image {
-        background-color: #F5F5F5;
-        display: grid;
-    }
-  
-
-    .Elijah,
-    .ElijahContent,
-    .elijah-image {
-        background-color: #F5F5F5;
-        display: grid;
-    }
-  
-
-    .Arthur,
-    .ArthurContent,
-    .arthur-image {
-        background-color: #F5F5F5;
-        display: grid;
-    }
+.arthur-container,
+.ben-container,
+.Elijah-Container {
+  background-color: #F5F5F5;
+}
 
 /*Below I will be adding some css styles to order items in my portfolio card*/
 
