@@ -9,7 +9,7 @@
 }
 /*
 
-html, body , .container {
+html, body {
     height: 100%;
     margin: 0;
   }
@@ -45,7 +45,7 @@ h2 {
 
     }
 */
-head.nav {
+header.nav {
   display: flex;
   justify-content: center;
 }
