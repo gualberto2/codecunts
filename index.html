@@ -1,114 +1,75 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <head>
-      <!--Basic Information-->
+    <head>        
+        <title>CodeCunts</title>
         <link href="resources/css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Crimson+Pro:wght@300;400&family=Encode+Sans+SC:wght@200;500&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
         <meta>
-        <title>CodeCunts</title>
     </head>
 
 
-    <!--Container (essentially a body tag)-->
-    <div class="container">
-      <!--Head div, holds title and other nav stuff-->
-      <div class="Head"></div>
-      <!--subhead div, this one does not contain content rather is the actual subhead block from left to right itself-->
-      <div class="Subhead"></div>
-      <!--Body div, contains the body content, ignore the footer content, do not move may become buggy-->
-      <div class="Body"></div>
-      <!--footer stuff, kind of unorganized i know but it will be fixed at a later date (written aug 8 2022)-->
-      <div class="Footer"></div>
-      <div class="Footer-content"></div>
-      <div class="Footer-Content-Middle"></div>
-      <div class="Footer-Content-Right"></div>
-      <!--Subhead, holds actual content -->
-      <div class="Arthur-Subhead">
-        <h2>Arthur</h2>
-      </div>
-      <div class="Head-Title">
-        <h1>CodeCunts</h1>
-      </div>
-      <div class="Elijah-Subhead">
-        <h2>Elijah</h2>
-      </div>
-      <div class="Ben-Subhead">
-        <h2>Ben</h2>
-      </div>
-      <!--Future projects which will be next to the title some time in the future will be implemented-->
-      <div class="Future-Projects-Tab"></div>
-      <div class="Future-Services-Tab"></div>
-      <!-- containers below will in fact hold content-->
-      <div class="Arthur-Container"></div>
-      <div class="Ben-Container"></div>
-      <div class="Elijah-Container"></div>
-      <!--bios-->
-      <div class="Elijah-Bio">
-        <div class="ElijahContent">
-          <div class="Elijah-services-offered">
-            <h4>Full-Stack Web Development</h4>
-            <h4>Cyber Security</h4>
-            <h4>Maintenance Technician</h4>
-          </div>
-          <div class="elijah-bio">
-          <p>CodeCunts Full-Stack Engineer and Partner. Lead development on CodeCunts
-             website itself. Very good with my hands, Maintenance tech on side :P.  </p>
-          </div>
+    <header>
+      <!-- FLEX BOX USAGE BELOW -->
+        <div class="nav">
+          <h3><a href="#">Services</a></h3>
+          <h1><a href="#">CodeCunts</a></h1>
+          <h3><a href="#">Projects</a></h3>
         </div>
-      </div>
+    </header>
 
-      <div class="Ben-Bio">
-        <div class="BenContent">
-          <div class="ben-services-offered">
-            <h4>Full-Stack Web Development</h4>
-            <h4>Marketing</h4>
-            <h4>Design</h4>
-          </div>
-          <div class="ben-bio">
-          <p>make a type specimen book. It has survived not only five centuries, but 
-            also the leap into electronic typesetting, remaining essentially unchanged.
-             It was popularised in the 1960s with the release of Letraset sheets 
-             containing Lorem Ipsum passages, and more recently with desktop publishing
-            </p>
-          </div>
+      <!-- POSSIBLE GRID USAGE BELOW, using grid for the body of the site is the goal in mind. Will try to 
+      utilize flexbox in the mean time for our cards since it is much easier to use.  -->
+      <!--The body tag is a container for the name divs that will be containers for the
+      Bio, Image, and Services for each individual portfolio card.-->
+      <div class="body">
+       <div class="names-header">
+        <div class="arthur">
+          <h4>Arthur</h4>
+            <div class="services">
+              <h6>Full Stack Web Developer</h6>
+              <h6>Arms Dealer</h6>
+              <h6>Marketing</h6>
+            </div>
+                  <!--Bio-->
+            <div class="Bio">
+              <p></p>
+            </div>
         </div>
-      </div>
-
-      <div class="Arthur-Bio">
-        <div class="ArthurContent">
-          <div class="arthur-services-offered">
-            <h4>Web Development</h4>
-            <h4>Cyber Security</h4>
-            <h4>Marketing</h4>
-          </div>
-          <div class="arthur-bio">
-            <p>In charge of managing Codecunts marketing from social media to letters.
-            You got that right, letters. Old school business owners in our area are 
-            always being bothered by this guy. But they love it, and once we build
-            them a website, and an easy to follow marketing plan, its game on!
-            </p>
-          </div>      
+        <div class="ben">
+          <h4>Ben</h4>
+            <div class="services">
+              <h6>Full Stack Web Developer</h6>
+              <h6>Design</h6>
+              <h6>Marketing</h6>
+            </div>
+                  <!--Bio-->
+            <div class="Bio">
+              <p></p>
+            </div>
         </div>
+        <div class="elijah">
+          <h4>Elijah</h4>
+              <div class="services">
+                <h6>Full Stack Web Developer</h6>
+                <h6>Arms Dealer</h6>
+                <h6>Marketing</h6>
+              </div>
+                   <!--Bio-->
+              <div class="Bio">
+                <p></p>
+              </div>
+        </div>
+       </div>
       </div>
-      
-<!-- BROKE THE SRC, TEMPORARY-->
-
-      <div class="Arthur-image">
-        <img class="img" src="esources/imgs/profile.png">
+      <!-- BELOW IS THE FOOTER DIV, we will be placing links to things about us, socials, and other things alike that
+      you would typically see in a website.-->
+      <div class="footer">
+        <div class="left"></div>
+        <div class="right"></div>
       </div>
-      <div class="Ben-Image">
-        <img class="img" src="esources/imgs/profile.png">
-      </div>
-      <div class="Elijah-Image">
-        <img class="img" src="esources/imgs/profile.png">
-      </div>
-      
-      <!--last footer div, unorganized leave alone for now-->
-      <div class="Footer-Content-Left"></div>
-    </div>
 
   </body>
 </html>

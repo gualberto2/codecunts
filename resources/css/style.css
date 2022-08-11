@@ -7,6 +7,7 @@
   font-family: "Source_Code_Pro";
   src: url(../fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
 }
+/*
 
 html, body , .container {
     height: 100%;
@@ -30,8 +31,8 @@ h2 {
     font-family: "Sans_Code_Pro", 'Times New Roman', Times, serif;
 }
 
-/* head and subhead css */
-  .Head {
+/* head and subhead css 
+   {
     margin-bottom: 20px;
     display: grid;
     background: hsla(0, 0%, 97%, 1);
@@ -43,133 +44,24 @@ h2 {
     .subhead {
 
     }
-
-/* Grid areas */
-.container {  display: grid;
-  grid-template-columns: minmax(3%, 82px) minmax(15%, 1fr) minmax(15%, 1fr) minmax(15%, 1fr) minmax(3%, 82px);
-  grid-template-rows: minmax(30px, 120px) minmax(20px, 90px) minmax(30%, 1fr) minmax(20%, 100px) 0.25fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 3%;
-  grid-auto-flow: column;
-}
-.Head { grid-area: 1 / 1 / 2 / 6; }
-.Subhead { grid-area: 2 / 1 / 3 / 6; }
-.Body { grid-area: 3 / 1 / 5 / 6; }
-.Footer { grid-area: 5 / 1 / 6 / 6; }
-.Footer-content { grid-area: 5 / 2 / 6 / 5; }
-.Footer-Content-Middle { grid-area: 5 / 3 / 6 / 4; }
-.Footer-Content-Right {justify-self: end;
-  align-self: stretch;
-  grid-area: 5 / 4 / 6 / 5;}
-.Arthur-Subhead { grid-area: 2 / 2 / 3 / 3; }
-.Head-Title { grid-area: 1 / 3 / 2 / 4; }
-.Elijah-Subhead { grid-area: 2 / 4 / 3 / 5; }
-.Ben-Subhead { grid-area: 2 / 3 / 3 / 4; }
-.Future-Projects-Tab { grid-area: 1 / 2 / 2 / 3; }
-.Future-Services-Tab { grid-area: 1 / 4 / 2 / 5; }
-.Arthur-Container { grid-area: 3 / 2 / 5 / 3; }
-.Ben-Container { grid-area: 3 / 3 / 5 / 4; }
-.Elijah-Container { grid-area: 3 / 4 / 5 / 5; }
-.Elijah-Bio { grid-area: 3 / 4 / 4 / 5; }
-.Ben-Bio { grid-area: 3 / 3 / 4 / 4; }
-.Arthur-Bio { grid-area: 3 / 2 / 4 / 3; }
-.Arthur-image { grid-area: 4 / 2 / 5 / 3; }
-.Ben-Image { grid-area: 4 / 3 / 5 / 4; }
-.Elijah-Image { grid-area: 4 / 4 / 5 / 5; }
-.Footer-Content-Left {
-  justify-self: start;
-  align-self: stretch;
-  grid-area: 5 / 2 / 6 / 3;
-}
-
-/* individual cards */
-
-/* general portfolio card css */
-.Arthur-container,
-.Ben-container,
-.Elijah-Container {
-  background-color: #F5F5F5;
-  min-width: 
-}
-
-/*Below I will be adding some css styles to order items in my portfolio card*/
-
-/* content cards, holds plain text, images, etc. */
-  .ArthurContent { 
-    grid-area: 3 / 2 / 4 / 3; 
-    color:hsla(0, 0%, 20%, 1);
-    text-align: center;
-    color:hsla(0, 0%, 20%, 1);
-    display: grid;
-}
-    .arthur-services-offered {
-
-    }
-  /*  .ArthurContent p {
-        word-spacing: 4px;
-        line-height: 1.4;
-        padding-right: 4%;
-        padding-left: 4%;
-    }
 */
-  .BenContent {
-     grid-area: 3 / 3 / 4 / 4; 
-     color:hsla(0, 0%, 20%, 1);
-     text-align: center;
-     color:hsla(0, 0%, 20%, 1);
-     display: grid;
-}
-  
-  .ElijahContent { 
-    grid-area: 3 / 4 / 4 / 5;
-    color:hsla(0, 0%, 20%, 1);
-    text-align: center;
-    color:hsla(0, 0%, 20%, 1);
-    display: grid;
- }
-
-  .contentright { 
-    grid-area: 3 / 5 / 4 / 6; 
-}
-  .contentleft { 
-    grid-area: 3 / 1 / 4 / 2; 
+head.nav {
+  display: flex;
+  justify-content: center;
 }
 
-.ArthurContent p,
-.BenContent p,
-.ElijahContent p {
-  font-family: "Albert_Sans_Light"; 
-  word-spacing: 4px;
-  line-height: 1.4;
-  padding-right: 4%;
-  padding-left: 4%;
-  z-index: 1;
-  font-size: 15px;
-  display: grid;
+.body {
+  display: flex;
+  justify-content: center;
 }
 
-.arthur-bio p,
-.ben-bio p,
-.elijah-biop {
-  z-index: 1;
-  display: grid;
-  margin: auto;
-  max-width: 90%;
-  max-height: fit-content;
-}
+    .names-header {
+      background-color:;
+    }
 
-.arthur-image img,
-.ben-image img,
-.elijah-image img {
-  height: auto;
-  max-width: 100%;
-  margin: auto;
+    .arthur,
+    .ben,
+    .elijah {
+      flex: 1 1 auto;
+    }
 
-}
-
-/* footer */
-  .footer { 
-    grid-area: 4 / 1 / 5 / 6; 
-    display: grid;
-}
