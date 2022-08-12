@@ -109,6 +109,7 @@ html {
   justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
+  background-color: #F5F5F5;
 }
 
 .sidebar-left:nth-child(1) {
