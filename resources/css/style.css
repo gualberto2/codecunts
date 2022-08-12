@@ -7,12 +7,14 @@
   font-family: "Source_Code_Pro";
   src: url(../fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
 }
-/*
+
 
 html, body {
     height: 100%;
     margin: 0;
   }
+
+  /*
 html {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -65,7 +67,7 @@ h2 {
       align-self: auto;
       order: 1;
       width: 80px;
-
+    
     }
     
     .flex-items:nth-child(2) {
@@ -76,9 +78,9 @@ h2 {
       align-self: auto;
       order: 2;
       width: 200px;
-      margin-left: 4px;
-      margin-right: 4px;
-      
+      margin-left: 10px;
+      margin-right: 10px;
+
     }
     
     .flex-items:nth-child(3) {
