@@ -45,24 +45,6 @@ h2 {
 
     }
 */
-header.nav {
-  display: flex;
-  justify-content: center;
-}
-
-.body {
-
-}
-
-    .names-header {
-      background-color:;
-    }
-
-    .arthur,
-    .ben,
-    .elijah {
-      flex: 1 1 auto;
-    }
 
 
     .flex-container {
@@ -72,6 +54,7 @@ header.nav {
       justify-content: center;
       align-items: normal;
       align-content: center;
+
     }
     
     .flex-items:nth-child(1) {
@@ -80,7 +63,9 @@ header.nav {
       flex-shrink: 1;
       flex-basis: auto;
       align-self: auto;
-      order: 0;
+      order: 1;
+      width: 80px;
+
     }
     
     .flex-items:nth-child(2) {
@@ -89,7 +74,11 @@ header.nav {
       flex-shrink: 1;
       flex-basis: auto;
       align-self: auto;
-      order: 0;
+      order: 2;
+      width: 200px;
+      margin-left: 4px;
+      margin-right: 4px;
+      
     }
     
     .flex-items:nth-child(3) {
@@ -98,5 +87,6 @@ header.nav {
       flex-shrink: 1;
       flex-basis: auto;
       align-self: auto;
-      order: 0;
+      order: 3;
+      width: 80px;
     }
