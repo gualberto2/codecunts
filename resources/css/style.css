@@ -9,7 +9,7 @@
 }
 
 
-html, body, header {
+html, body {
     height: 100%;
     margin: 0;
   }
@@ -47,7 +47,11 @@ html {
       justify-content: center;
       align-items: normal;
       align-content: center;
-
+      background: hsla(0, 0%, 97%, 1);
+      background: linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+      background: -moz-linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+      background: -webkit-linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7F7F7", endColorstr="#FCFCFC", GradientType=1 );
     }
     
     .flex-items:nth-child(1) {
@@ -58,7 +62,7 @@ html {
       align-self: auto;
       order: 1;
       width: 80px;
-    
+      margin-right: 5px;
     }
     
     .flex-items:nth-child(2) {
@@ -82,8 +86,16 @@ html {
       align-self: auto;
       order: 3;
       width: 80px;
+      margin-left: 5px;
+      padding: ;
     }
         .flex-items h1,
         .flex-items h3 {
           text-align: center;
+          font-family: "Source_Code_Pro";
+          text-decoration: none;
+        }
+
+        .flex-items h3:hover {
+          text-decoration: underline;
         }
