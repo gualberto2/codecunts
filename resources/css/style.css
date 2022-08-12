@@ -102,6 +102,12 @@ html {
 
 
 /* BELOW IS THE 'BODY' FLEX BOX STUFF */
+.art-card,
+.ben-card,
+.eli-card {
+  background-color: #F5F5F5;
+}
+
 .portfolio-cards {
   display: flex;
   flex-direction: row;
@@ -109,7 +115,6 @@ html {
   justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
-  background-color: #F5F5F5;
 }
 
 .sidebar-left:nth-child(1) {
