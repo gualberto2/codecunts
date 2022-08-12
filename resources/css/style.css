@@ -39,7 +39,7 @@ html {
     }
 */
 
-
+/* BELOW IS ALL FLEXBOX FOR NAVIGATION/HEADER BAR */
     .flex-container {
       display: flex;
       flex-direction: row;
@@ -47,6 +47,7 @@ html {
       justify-content: center;
       align-items: normal;
       align-content: center;
+      margin-bottom: 20px;
       background: hsla(0, 0%, 97%, 1);
       background: linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
       background: -moz-linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
@@ -87,7 +88,6 @@ html {
       order: 3;
       width: 80px;
       margin-left: 5px;
-      padding: ;
     }
         .flex-items h1,
         .flex-items h3 {
@@ -99,3 +99,59 @@ html {
         .flex-items h3:hover {
           text-decoration: underline;
         }
+
+
+/* BELOW IS THE 'BODY' FLEX BOX STUFF */
+.portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.sidebar-left:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 10%;
+  align-self: auto;
+  order: 2;
+}
+
+.arthur:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  align-self: auto;
+  order: 2;
+}
+
+.ben:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  align-self: auto;
+  order: 3;
+}
+
+.elijah:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  align-self: auto;
+  order: 4;
+}
+
+.sidebar-right:nth-child(5) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 10%;
+  align-self: auto;
+  order: 5;
+}
