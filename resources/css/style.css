@@ -108,6 +108,18 @@ html {
   background-color: #F5F5F5;
 }
 
+.art-services h2,
+.art-services h5,
+.ben-services h2,
+.ben-services h5,
+.eli-services h2,
+.eli-services h5 {
+  font-family: "Albert_Sans_Light", sans-serif, serif;
+  text-align: center;
+
+}
+
+
 .portfolio-cards {
   display: flex;
   flex-direction: row;
