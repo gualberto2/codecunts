@@ -188,7 +188,7 @@ html {
 
 
 /* Img flexbox */
-.image-cards {
+.image-row {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
