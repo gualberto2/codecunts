@@ -40,7 +40,7 @@ html {
 */
 
 /* BELOW IS ALL FLEXBOX FOR NAVIGATION/HEADER BAR */
-    .flex-container {
+    .nav-header {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -55,7 +55,7 @@ html {
       filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7F7F7", endColorstr="#FCFCFC", GradientType=1 );
     }
     
-    .flex-items:nth-child(1) {
+    .services:nth-child(1) {
       display: block;
       flex-grow: 0;
       flex-shrink: 1;
@@ -66,7 +66,7 @@ html {
       margin-right: 5px;
     }
     
-    .flex-items:nth-child(2) {
+    .title:nth-child(2) {
       display: block;
       flex-grow: 0;
       flex-shrink: 1;
@@ -79,7 +79,7 @@ html {
 
     }
     
-    .flex-items:nth-child(3) {
+    .projects:nth-child(3) {
       display: block;
       flex-grow: 0;
       flex-shrink: 1;
