@@ -39,14 +39,19 @@ html {
     }
 */
 
+/* Utility Selectors */
+.flex1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: normal;
+  align-content: center;
+}
+
+
 /* BELOW IS ALL FLEXBOX FOR NAVIGATION/HEADER BAR */
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: normal;
-      align-content: center;
+    .title {
       margin-bottom: 20px;
       background: hsla(0, 0%, 97%, 1);
       background: linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
@@ -55,7 +60,7 @@ html {
       filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7F7F7", endColorstr="#FCFCFC", GradientType=1 );
     }
     
-    .flex-items:nth-child(1) {
+    .services:nth-child(1) {
       display: block;
       flex-grow: 0;
       flex-shrink: 1;
@@ -66,7 +71,7 @@ html {
       margin-right: 5px;
     }
     
-    .flex-items:nth-child(2) {
+    .title:nth-child(2) {
       display: block;
       flex-grow: 0;
       flex-shrink: 1;
@@ -79,7 +84,7 @@ html {
 
     }
     
-    .flex-items:nth-child(3) {
+    .projects:nth-child(3) {
       display: block;
       flex-grow: 0;
       flex-shrink: 1;
@@ -89,14 +94,13 @@ html {
       width: 80px;
       margin-left: 5px;
     }
-        .flex-items h1,
-        .flex-items h3 {
+        .services a {
           text-align: center;
           font-family: "Source_Code_Pro";
           text-decoration: none;
         }
 
-        .flex-items h3:hover {
+        .services a:hover {
           text-decoration: underline;
         }
 
@@ -108,12 +112,8 @@ html {
   background-color: #F5F5F5;
 }
 
-.art-services h2,
-.art-services h5,
-.ben-services h2,
-.ben-services h5,
-.eli-services h2,
-.eli-services h5 {
+.htag h2,
+.htag h5 {
   font-family: "Albert_Sans_Light", sans-serif, serif;
   text-align: center;
 
