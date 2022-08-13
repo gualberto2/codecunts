@@ -204,6 +204,8 @@ html {
   flex-basis: 10%;
   align-self: auto;
   order: 2;
+  height: 100%;
+  width: auto;
 }
 
 .arthur-image-card:nth-child(2) {
@@ -213,6 +215,8 @@ html {
   flex-basis: 25%;
   align-self: auto;
   order: 2;
+  height: 100%;
+  width: auto;
 }
 
 .ben-image-card:nth-child(3) {
@@ -222,6 +226,8 @@ html {
   flex-basis: 25%;
   align-self: auto;
   order: 3;
+  height: 100%;
+  width: auto;
 }
 
 .elijah-image-card:nth-child(4) {
@@ -231,6 +237,8 @@ html {
   flex-basis: 25%;
   align-self: auto;
   order: 4;
+  height: 100%;
+  width: auto;
 }
 
 .right-image-container:nth-child(5) {
@@ -240,4 +248,6 @@ html {
   flex-basis: 10%;
   align-self: auto;
   order: 5;
+  height: 100%;
+  width: auto;
 }
