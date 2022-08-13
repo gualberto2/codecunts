@@ -253,3 +253,8 @@ html {
   height: 100%;
   width: auto;
 }
+
+      .portfolio-cards img {
+        width: 30%;
+        height: auto;
+      }
