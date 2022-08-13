@@ -8,6 +8,11 @@
   src: url(../fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
 
 html, body {
     height: 100%;
@@ -89,14 +94,15 @@ html {
       width: 80px;
       margin-left: 5px;
     }
-        .flex-items h1,
-        .flex-items h3 {
+        
+        .nav-header h3,
+        .nav-header h1 {
           text-align: center;
           font-family: "Source_Code_Pro";
           text-decoration: none;
         }
 
-        .flex-items h3:hover {
+        .nav-header h3:hover {
           text-decoration: underline;
         }
 
@@ -120,6 +126,8 @@ html {
 }
 
 
+
+
 .portfolio-cards {
   display: flex;
   flex-direction: row;
@@ -128,6 +136,10 @@ html {
   align-items: stretch;
   align-content: stretch;
 }
+
+    .portfolio-cards p {
+        font-family: "Quicksand";
+    }
 
 .sidebar-left:nth-child(1) {
   display: block;
@@ -166,6 +178,62 @@ html {
 }
 
 .sidebar-right:nth-child(5) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 10%;
+  align-self: auto;
+  order: 5;
+}
+
+
+/* Img flexbox */
+.portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.left-image-container:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 10%;
+  align-self: auto;
+  order: 2;
+}
+
+.arthur-image-card:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  align-self: auto;
+  order: 2;
+}
+
+.ben-image-card:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  align-self: auto;
+  order: 3;
+}
+
+.elijah-image-card:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  align-self: auto;
+  order: 4;
+}
+
+.right-image-container:nth-child(5) {
   display: block;
   flex-grow: 0;
   flex-shrink: 1;
