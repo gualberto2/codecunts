@@ -121,12 +121,15 @@ html {
   font-family: "Albert_Sans_Light", sans-serif, serif;
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .art-services h2,
 .ben-services h2,
 .eli-services h2 {
   font-family: "Albert_Sans_Light", sans-serif, serif;
   font-size: 2.4rem;
+  text-align: center;
 }
 
 .portfolio-cards {
@@ -141,6 +144,8 @@ html {
     .portfolio-cards p {
         font-family: "Quicksand";
         font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
     }
 
 .sidebar-left:nth-child(1) {
