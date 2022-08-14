@@ -17,6 +17,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-size: 20px
   }
 
 html {
@@ -139,6 +140,7 @@ html {
 
     .portfolio-cards p {
         font-family: "Quicksand";
+        font-size: 0.9rem;
     }
 
 .sidebar-left:nth-child(1) {
