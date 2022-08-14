@@ -146,6 +146,8 @@ html {
         font-size: 0.9rem;
         text-align: center;
         padding: 5px;
+        line-height: 1.5;
+
     }
 
 .sidebar-left:nth-child(1) {
@@ -264,4 +266,6 @@ html {
       .img img {
         width: 60%;
         height: auto;
+        display: block;
+        margin: auto;
       }
