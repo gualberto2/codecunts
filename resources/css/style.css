@@ -153,7 +153,12 @@ html {
         text-align: center;
         padding: 5px;
         line-height: 1.5;
+    }
 
+    .art-bio,
+    .ben-bio,
+    .eli-bio {
+      line-height: 1.5;
     }
 
     /* flexbox stuff for the cards*/
