@@ -115,6 +115,7 @@ html {
   background-color: #F5F5F5;
 }
 
+/* services stuff */
 .art-services h5,
 .ben-services h5,
 .eli-services h5 {
@@ -141,6 +142,7 @@ html {
   align-content: stretch;
 }
 
+/* p stuff inside of card */
     .portfolio-cards p {
         font-family: "Quicksand";
         font-size: 0.9rem;
@@ -150,6 +152,7 @@ html {
 
     }
 
+    /* flexbox stuff for the cards*/
 .sidebar-left:nth-child(1) {
   display: block;
   flex-grow: 0;
@@ -196,7 +199,7 @@ html {
 }
 
 
-/* Img flexbox */
+/* Imgflexbox stuff */
 .image-row {
   display: flex;
   flex-direction: row;
@@ -262,7 +265,7 @@ html {
   height: 100%;
   width: auto;
 }
-
+/* img css stuff */
       .img img {
         width: 60%;
         height: auto;
