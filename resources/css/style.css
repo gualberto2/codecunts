@@ -1,3 +1,22 @@
+/* media queries */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  { 
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+
 /*For whole page */
 @font-face {
   font-family: "Albert_Sans_Light";
@@ -18,6 +37,12 @@ html, body {
     height: 100%;
     margin: 0;
     font-size: 20px
+  }
+
+  body {
+    min-width: 700px;
+    max-width: 100%;
+    height: 100%;
   }
 
 html {
@@ -46,14 +71,19 @@ html {
 */
 
 /* BELOW IS ALL FLEXBOX FOR NAVIGATION/HEADER BAR */
+
     .nav-header {
+      height: 100%;
+      height: 42px;
+      width: 100%;
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: normal;
+      align-items: stretch;
       align-content: center;
       margin-bottom: 20px;
+      gap: 50px;
       background: hsla(0, 0%, 97%, 1);
       background: linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
       background: -moz-linear-gradient(135deg, hsla(0, 0%, 97%, 1) 0%, hsla(0, 0%, 99%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
@@ -62,48 +92,43 @@ html {
     }
     
     .services:nth-child(1) {
-      display: block;
+      display: inline-block;
       flex-grow: 0;
-      flex-shrink: 1;
+      flex-shrink: 0;
       flex-basis: auto;
       align-self: auto;
       order: 1;
-      width: 80px;
-      margin-right: 5px;
+
     }
     
     .title:nth-child(2) {
       display: block;
       flex-grow: 0;
-      flex-shrink: 1;
+      flex-shrink: 0;
       flex-basis: auto;
       align-self: auto;
       order: 2;
-      width: 200px;
-      margin-left: 25px;
-      margin-right: 25px;
-
     }
     
     .projects:nth-child(3) {
       display: block;
       flex-grow: 0;
-      flex-shrink: 1;
+      flex-shrink: 0;
       flex-basis: auto;
       align-self: auto;
       order: 3;
-      width: 80px;
-      margin-left: 5px;
+
     }
-        
-        .nav-header h3,
-        .nav-header h1 {
+      
+        .nav-header a,
+        .title {
           text-align: center;
-          font-family: "Source_Code_Pro";
+          font-family: "Quicksand";
           text-decoration: none;
+
         }
 
-        .nav-header h3:hover {
+        .nav-header a:hover {
           text-decoration: underline;
         }
 
@@ -114,6 +139,56 @@ html {
 .elijah {
   background-color: #F5F5F5;
 }
+
+/* Flexbox for landing page top body (section 1) */
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 50px;
+  margin-bottom: 200px;
+}
+
+.left-card {
+  min-width: 400px;
+  max-width: 450px;
+  background-color: #F5F5F5;
+  width: 50%;
+  height: 50%;
+  margin: 40px 0px 0px 30px;
+  font-family: "Quicksand";
+}
+    .infocard p {
+      font-size: 0.85rem;
+      padding: 25px;
+      line-height: 1.71;
+      text-indent: .8rem;
+    }
+
+    .infocard h4 {
+      text-align: center;
+    }
+
+
+.right-card {
+  height: auto;
+  margin: 100%;
+  margin: 40px 0px 0px 30px;
+  font-family: "Quicksand";
+}
+
+    .picturecard {
+
+    }
+
+    .right-card img {
+      display: block;
+      width: 65%;
+      align-content: flex-end;
+    }
 
 /* services stuff */
 .art-services h5,
@@ -136,6 +211,15 @@ html {
   box-shadow: 0px 1.2px #dcdcdc;
 }
 
+.services a,
+.projects a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Main portfolio card css */
 
 .portfolio-cards {
   display: flex;
@@ -144,6 +228,7 @@ html {
   justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
+  gap: 15px;
 }
 
 /* p stuff inside of card */
@@ -165,7 +250,7 @@ html {
 .sidebar-left:nth-child(1) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 10%;
   align-self: auto;
   order: 2;
@@ -174,34 +259,37 @@ html {
 .arthur:nth-child(2) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 25%;
   align-self: auto;
   order: 2;
+  min-width: 20%;
 }
 
 .ben:nth-child(3) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 25%;
   align-self: auto;
   order: 3;
+  min-width: 20%;
 }
 
 .elijah:nth-child(4) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 25%;
   align-self: auto;
   order: 4;
+  min-width: 20%;
 }
 
 .sidebar-right:nth-child(5) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 10%;
   align-self: auto;
   order: 5;
@@ -223,7 +311,7 @@ html {
 .left-image-container:nth-child(1) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 10%;
   align-self: auto;
   order: 2;
@@ -234,7 +322,7 @@ html {
 .arthur-image-card:nth-child(2) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 25%;
   align-self: auto;
   order: 2;
@@ -245,7 +333,7 @@ html {
 .ben-image-card:nth-child(3) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 25%;
   align-self: auto;
   order: 3;
@@ -256,7 +344,7 @@ html {
 .elijah-image-card:nth-child(4) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 25%;
   align-self: auto;
   order: 4;
@@ -267,7 +355,7 @@ html {
 .right-image-container:nth-child(5) {
   display: block;
   flex-grow: 0;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-basis: 10%;
   align-self: auto;
   order: 5;
@@ -280,4 +368,6 @@ html {
         height: auto;
         display: block;
         margin: auto;
+        min-width: 50%;
+        max-width: 60%;
       }
