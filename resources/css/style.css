@@ -181,13 +181,12 @@ html {
 }
 
     .picturecard {
-
+      border: 1px solid white
     }
 
     .right-card img {
       display: block;
       width: 65%;
-      align-content: flex-end;
     }
 
 /* services stuff */

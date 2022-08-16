@@ -1,106 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <head>        
-        <title>CodeCunts</title>
-        <link href="resources/css/style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Crimson+Pro:wght@300;400&family=Encode+Sans+SC:wght@200;500&family=Libre+Barcode+128+Text&display=swap;family=Quicksand:wght@300&display=swap" rel="stylesheet">
-        <meta>
-    </head>
-
-
-    <header>
-      <!-- FLEX BOX USAGE BELOW -->
-              <div class="nav-header">
-                <div class="services">
-                  <a href="#">Services</a>
+    <body>
+        <head>
+            <link href="resources/css/style.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Crimson+Pro:wght@300;400&family=Encode+Sans+SC:wght@200;500&family=Libre+Barcode+128+Text&display=swap;family=Quicksand:wght@300&display=swap" rel="stylesheet">
+            <meta>
+        </head>
+        
+        <!--Truebody Div-->
+        <div class="body">
+            <!--Top of site: header/navbar-->
+            <div class="header">
+                <div class="navtab">
+                    <a href="#">Services</a>
                 </div>
                 <div class="title">
-                  CodeCunts
+                    <a href="index.html">CodeCunts</a>
                 </div>
-                <div class="projects">
-                  <a href="#">Projects</a>
+                <div class="navtab">
+                    <a href="#">Projects</a>
                 </div>
-              </div>
-    </header>
-
-    <div class="body">
-      <!-- Landing page -->
-      <div class="section-1">
-        <div class="left-card">
-            <div class="infocard">
-                <h4>Welcome to our Portfolio Site.</h4>
-                <p>
-                  We make it seemless to create anything digital.
-                  We are a team of Software Engineers, Full Stack Web Development and App Developers.
-                  We are self-taught and are contionously learning and applying our knowledge.
-                  The combined knowledge of Development, Marketing, and Design we create A1 fire asf websites.
-                </p>
+            </div>
+            <!--Section 1: Info Section-->
+            <div class="section1">
+                <div class="leftsection1">
+                    <div class="infocard">
+                        <h4>Welcome to our Portfolio Site.</h4>
+                        <p>
+                          We make it seemless to create anything digital.
+                          We are a team of Software Engineers, Full Stack Web Development and App Developers.
+                          We are self-taught and are contionously learning and applying our knowledge.
+                          The combined knowledge of Development, Marketing, and Design we create A1 fire asf websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="rightsection1">
+                    <div class="picturecard">
+                        <img src="resources/imgs/blackcoder.jpeg" id="img1">
+                        <img src="resources/imgs/coderbun.jpeg" id="img2">
+                    </div>
+                </div>
+            </div>
+            <!--Section 2: Portfolio Cards-->
+            <div class="portfoliocards">
+                <div class="arthur">
+                    <div id="portimg">
+                        <img src="resources/imgs/placeholder.jpeg">
+                    </div>
+                    <div class="artserv"></div>
+                    <div class="artbio"></div>
+                </div>
+                <div class="ben">
+                    <div id="portimg"></div>
+                    <div class="benserv"></div>
+                    <div class="benbio"></div>
+                </div>
+                <div class="elijah">                    
+                    <div id="portimg"></div>
+                    <div class="eliserv"></div>
+                    <div class="elibio"></div>
+                </div>
+            </div>
+            <!--Section 3: Services + List of sites done-->
+            <div class="services">
+                <div class="Web-development service"></div>
+                <div class="Debugging service"></div>
+                <div class="Design service"></div>
+            </div>
+            <!--Bottom of Site: Footer-->
+            <div class="footer">
+                <div class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
             </div>
         </div>
-        <div class="right-card">
-            <div class="picturecard">
-                <img src="resources/imgs/blackcoder.jpeg">
-            </div>
-        </div>
-    </div>
+    </body>
 
-      <div class="portfolio-cards">
-            <div class="sidebar-left">
-            </div>
-            <div class="arthur">
-                <div class="art-card">
-                  <div class="art-services">
-                    <h2>Arthur</h2>
-                    <h5>Full Stack Developer</h5>
-                    <h5>Marketing</h5>
-                    <h5>Consulting</h5>
-                  </div>
-                  <div class="art-bio">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                  </div>
-                  <div class="img">
-                    <img src="resources/imgs/profile.png" class="img">
-                  </div>
-                </div>
-            </div>
-            <div class="ben">
-                <div class="ben-card">
-                  <div class="ben-services">
-                    <h2>Ben</h2>
-                    <h5>Full Stack Developer</h5>
-                    <h5>Marketing</h5>
-                    <h5>Design</h5>
-                  </div>
-                  <div class="ben-bio">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                  </div>
-                  <div class="img">
-                    <img src="resources/imgs/profile.png" class="img">
-                  </div>
-                </div>
-            </div>
-            <div class="elijah">
-                <div class="eli-card">
-                  <div class="eli-services">
-                    <h2>Elijah</h2>
-                    <h5>Full Stack Developer</h5>
-                    <h5>Maintenance</h5>
-                    <h5>Web Design</h5>
-                  </div>
-                  <div class="eli-bio">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                  </div>
-                  <div class="img">
-                    <img src="resources/imgs/profile.png" class="img">
-                  </div>
-                </div>
-            </div>
-            <div class="sidebar-right">
-            </div>
-
-    </div>
-  </body>
 </html>
