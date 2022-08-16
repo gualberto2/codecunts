@@ -18,14 +18,16 @@ html,
 body {
     height: 100%;
     margin: 0;
-    font-size: 20px
+    font-size: 20px;
+    font-family: 'Quicksand';
+    background-color: #fff0eb;
   }
 
 .body {
 
 }
 
-
+/* Header CSS */
 .header {
   display: flex;
   flex-direction: row;
@@ -39,6 +41,7 @@ body {
   .title {
     margin-left: 50px;
     margin-right: 50px;
+    font-size: 1.8rem;
   }
   .navtab {
 
@@ -47,19 +50,83 @@ body {
     .navtab {
 
     }
+    .title a,
+    .navtab a {
+      text-decoration: none;
+      color: black;
+    }
+      .navtab a:hover {
+        text-decoration: underline;
+        text-decoration-color: aquamarine;
+      }
 
+/* Section 1 CSS */
 .section1 {
-
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 40% 60%; 
+  grid-template-rows: 1fr; 
+  gap: 0px 2%; 
+  grid-template-areas: 
+    "leftsection1 rightsection1"; 
+  padding: 20px 8%;
+  height: auto;
+  width: auto;
 }
+  .leftsection1 {
+    grid-area: leftsection1;
+    padding: 15px;
+    align-self: center;
+  }
+      .infocard {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+      }
+          .infocard h4 {
+            align-self: center;
+          }
 
+  .rightsection1 {
+    grid-area: rightsection1;
+    padding: 50px;
+  }
+    .picturecard {
+      margin: 0 auto;
+
+    }
+
+
+/* PortfolioCards CSS */
 .portfoliocards {
 
 }
-
+/* Services CSS */
 .services {
 
 }
-
+/* Footer CSS */
 .footer {
+
+}
+
+/* every bit of code below will be used as testers */
+.leftsection1,
+.rightsection1 {
+  background-color: white;
+}
+
+/* image shrinker when first using */
+
+img {
+  height: auto;
+  width: 50%;
+
+
 
 }
