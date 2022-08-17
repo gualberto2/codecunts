@@ -37,6 +37,10 @@ body {
   align-content: center;
   padding: 8px;
   height: 42px;
+  min-height: 0;
+  min-width: 100vh; 
+  flex: 0 0 auto;
+  position: sticky;
 }
   .title {
     margin-left: 50px;
@@ -74,71 +78,110 @@ body {
   padding: 20px 8%;
   height: auto;
   width: auto;
+  min-width: 100vh;
 }
+
+/* left card */
   .leftsection1 {
     grid-area: leftsection1;
     padding: 20px;
     align-self: center;
     margin-bottom: 90px;
     margin-top: 60px;
+        /* below widths are for desktop size screens */
+    min-width: 300px;
+    max-width: 500px;
   }
       .infocard {
         display: flex;
+        flex: 0 0 auto;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: flex-start;
         align-content: center;
+        min-height: 0;
       }
           .infocard h4 {
-            align-self: center;
+            align-self: flex-start;
           }
-
+          .infocard p {
+            align-self: flex-start;
+            line-height: 1.5;
+          }
+/* right card */
   .rightsection1 {
     grid-area: rightsection1;
     padding: 50px;
     display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
     align-content: center;
+        /* min for large computer screens */
+    min-width: 500px;
+    max-width: 666px;
   }
+
     .picturecard {
-
-    } 
-
-
-  /* code used below if flexbox does not work 
-    .picturecard {
-      margin: 0 auto;
-      position: relative;
+      min-width: 100%;
     }
-
     .picturecard img {
-      position: absolute;
-      height:300px;
-      width: 300px;
-    }
+      height: auto;
+      width: 50%;
+    } 
         #img1 {
-          top: 0;
-          left: 0;
+
         }
         #img2 {
-          top: 30px;
-          left: 30px;
+
         }
         #img3 {
-          top:60px;
-          left: 60px;
-        }
-*/
 
+        }
 
 /* PortfolioCards CSS */
 .portfoliocards {
-
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 0px 2%; 
+  background-color: #2d0b00;
+  padding: 80px 0;
+  margin: 0;
 }
+      .arthur {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #fff0eb;
+        width: 75%;
+        justify-self: center;
+        padding: 8px;
+      }
+
+      .ben{
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: #fff0eb;
+        width: 75%;
+        justify-self: center;
+        padding: 8px;
+      }
+      .elijah{
+        grid-area: 1 / 3 / 2 / 4;
+        background-color: #fff0eb;
+        width: 75%;
+        justify-self: center;
+        padding: 8px;
+      }
+
+                  #portimg img {
+                    display:block;
+                    height: auto;
+                    width: 30%;
+                  }
 /* Services CSS */
 .services {
 
@@ -154,12 +197,18 @@ body {
   background-color: white;
 }
 
-/* image shrinker when first using */
+/* media querys: helps set responsiveness for the your site. */
 
-img {
-  height: auto;
-  width: 50%;
+/* for most desktop site size */
 
+    /*laptop screens*/
+    @media only screen and (min-width: 1000px) {
 
+    }
+
+/* for tablet sizes */
+@media only screen and () {
 
 }
+
+/* for most mobile device sizes */
