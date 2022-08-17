@@ -77,8 +77,10 @@ body {
 }
   .leftsection1 {
     grid-area: leftsection1;
-    padding: 15px;
+    padding: 20px;
     align-self: center;
+    margin-bottom: 90px;
+    margin-top: 60px;
   }
       .infocard {
         display: flex;
@@ -95,11 +97,42 @@ body {
   .rightsection1 {
     grid-area: rightsection1;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
   }
     .picturecard {
-      margin: 0 auto;
 
+    } 
+
+
+  /* code used below if flexbox does not work 
+    .picturecard {
+      margin: 0 auto;
+      position: relative;
     }
+
+    .picturecard img {
+      position: absolute;
+      height:300px;
+      width: 300px;
+    }
+        #img1 {
+          top: 0;
+          left: 0;
+        }
+        #img2 {
+          top: 30px;
+          left: 30px;
+        }
+        #img3 {
+          top:60px;
+          left: 60px;
+        }
+*/
 
 
 /* PortfolioCards CSS */
