@@ -233,16 +233,23 @@ body {
 }
 
       .web-development {
+        border: 1px solid white;
         justify-self: center; 
         align-self: center; 
         grid-area: web-development; 
       }
+          .languagesimg {
+            display: block;
+
+          }
       .debugging {
+        border: 1px solid white;
         justify-self: center; 
         align-self: center; 
         grid-area: debugging; 
       }
       .design {
+        border: 1px solid white;
         justify-self: center; 
         align-self: center; 
         grid-area: design; 
@@ -256,6 +263,10 @@ body {
 .leftsection1,
 .rightsection1 {
   background-color: rgba(255, 240, 235, 1);
+}
+
+.services img {
+  width: 20%;
 }
 
 /* media querys: helps set responsiveness for the your site. */
