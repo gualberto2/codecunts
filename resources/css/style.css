@@ -20,7 +20,7 @@ body {
     margin: 0;
     font-size: 20px;
     font-family: 'Quicksand';
-    background-color: #fff0eb;
+    background-color: rgba(255, 240, 235, 1);
   }
 
 .body {
@@ -34,18 +34,23 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
+  align-self: flex-start;
   align-content: center;
   padding: 8px;
   height: 42px;
   min-height: 0;
   min-width: 100vh; 
   flex: 0 0 auto;
+  position: -webkit-sticky; /* for Safari */
   position: sticky;
+  top: 0;
+  background-color: rgba(255, 240, 235, 1);
 }
   .title {
     margin-left: 50px;
     margin-right: 50px;
     font-size: 1.8rem;
+    font-weight: 900;
   }
   .navtab {
 
@@ -79,6 +84,7 @@ body {
   height: auto;
   width: auto;
   min-width: 100vh;
+  margin-bottom: 3%;
 }
 
 /* left card */
@@ -120,17 +126,21 @@ body {
     justify-content: center;
     align-items: flex-start;
     align-content: center;
+    justify-self: right;
         /* min for large computer screens */
     min-width: 500px;
     max-width: 666px;
+    min-height: 400px;
+    max-height: 500px;
   }
 
     .picturecard {
       min-width: 100%;
+      height: auto;
     }
     .picturecard img {
       height: auto;
-      width: 50%;
+      width: 35%;
     } 
         #img1 {
 
@@ -181,6 +191,18 @@ body {
                     display:block;
                     height: auto;
                     width: 30%;
+                    margin: auto;
+                  }
+
+                  .portfoliocards h3,
+                  .portfoliocards h5 {
+                    padding: 0px 9px;
+                    margin: 0;
+                  }
+                  .portfoliocards p {
+                    line-height: 1.6;
+                    font-size: .87rem;
+                    padding: 4px 9px;
                   }
 /* Services CSS */
 .services {
@@ -194,7 +216,7 @@ body {
 /* every bit of code below will be used as testers */
 .leftsection1,
 .rightsection1 {
-  background-color: white;
+  background-color: rgba(255, 240, 235, 1);
 }
 
 /* media querys: helps set responsiveness for the your site. */
@@ -212,3 +234,5 @@ body {
 }
 
 /* for most mobile device sizes */
+
+/*  test colors: brighter background FFDBCF, */
