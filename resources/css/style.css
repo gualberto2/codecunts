@@ -293,7 +293,7 @@ body {
         background: radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
         background: -moz-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
         background: -webkit-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE0D6", endColorstr="#FFF0EB", GradientType=1 );
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE0D6", endColorstr="#FFF0EB", GradientType=1 );  
         border-radius: 14px;
         margin-top: 8px;
         margin-bottom: 35px;
