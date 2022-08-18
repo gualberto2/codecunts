@@ -236,11 +236,19 @@ body {
 }
 
       .Web-development {
-        border: 1px solid white;
+        border: 1px solid transparent;
         justify-self: center; 
         align-self: center; 
         grid-area: web-development; 
         width: 35%;
+        background: hsla(20, 100%, 73%, 1);
+        background: radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        background: -moz-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        background: -webkit-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA375", endColorstr="#FF855C", GradientType=1 );
+        border-radius: 14px;
+        margin-top: 35px;
+        margin-bottom: 8px;
       }
       .languages p {
         text-align: center;
@@ -251,11 +259,13 @@ body {
           }
 
       .Debugging {
-        border: 1px solid white;
+        border: 1px solid transparent;
         justify-self: center; 
         align-self: center; 
         grid-area: debugging; 
         width: 35%;
+        border-radius: 14px;
+        padding: 
       }
       .bugdesc{
         text-align: center;
@@ -266,11 +276,14 @@ body {
           }
 
       .Design {
-        border: 1px solid white;
+        border: 1px solid transparent;
         justify-self: center; 
         align-self: center; 
         grid-area: design; 
         width: 35%;
+        border-radius: 14px;
+        margin-top: 8px;
+        margin-bottom: 35px;
       } 
       .designdesc p {
         text-align: center;
@@ -311,4 +324,4 @@ body {
 
 /* for most mobile device sizes */
 
-/*  test colors: brighter background FFDBCF, */
+/*  test colors: brighter background FFDBCF, more contrast background FFE0D6, even more contrasted ffb399, coral #FF855C */
