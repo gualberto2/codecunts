@@ -41,7 +41,7 @@ body {
   align-self: flex-start;
   align-content: center;
   padding: 8px;
-  height: 42px;
+  height: 48px;
   min-height: 0;
   min-width: 100vh; 
   flex: 0 0 auto;
@@ -98,9 +98,9 @@ body {
     align-self: center;
     margin-bottom: 90px;
     margin-top: 60px;
-        /* below widths are for desktop size screens */
+        /* below widths are for desktop size screens 
     min-width: 300px;
-    max-width: 500px;
+    max-width: 500px;   */
   }
       .infocard {
         display: flex;
@@ -112,14 +112,15 @@ body {
         align-content: center;
         min-height: 0;
       }
-          .infocard h4 {
+          .infocard h2 {
             align-self: flex-start;
-            font-size: 3.1rem;
+            font-size: 2.85rem;
             margin-top: 0;
           }
           .infocard p {
             align-self: flex-start;
             line-height: 1.5;
+            font-size: 0.85rem;
           }
 /* right card */
   .rightsection1 {
@@ -239,7 +240,7 @@ body {
     }
 
 /* for tablet sizes */
-@media only screen and () {
+@media only screen and (min-width: ) {
 
 }
 
