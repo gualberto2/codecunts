@@ -98,9 +98,9 @@ body {
     align-self: center;
     margin-bottom: 90px;
     margin-top: 60px;
-        /* below widths are for desktop size screens 
-    min-width: 300px;
-    max-width: 500px;   */
+        /* below widths are for desktop size screens */
+      min-width: 0;
+      max-width: 100%;
   }
       .infocard {
         display: flex;
@@ -116,6 +116,7 @@ body {
             align-self: flex-start;
             font-size: 2.85rem;
             margin: 0 0;
+            text-align: left;
           }
           .infocard p {
             align-self: flex-start;
