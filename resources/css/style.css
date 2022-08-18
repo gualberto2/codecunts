@@ -249,6 +249,7 @@ body {
         border-radius: 14px;
         margin-top: 35px;
         margin-bottom: 8px;
+        padding: 20px;
       }
       .languages p {
         text-align: center;
@@ -264,8 +265,13 @@ body {
         align-self: center; 
         grid-area: debugging; 
         width: 35%;
+        background: hsla(20, 100%, 73%, 1);
+        background: radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        background: -moz-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        background: -webkit-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA375", endColorstr="#FF855C", GradientType=1 );
         border-radius: 14px;
-        padding: 
+        padding: 20px;
       }
       .bugdesc{
         text-align: center;
@@ -281,9 +287,15 @@ body {
         align-self: center; 
         grid-area: design; 
         width: 35%;
+        background: hsla(20, 100%, 73%, 1);
+        background: radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        background: -moz-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        background: -webkit-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA375", endColorstr="#FF855C", GradientType=1 );
         border-radius: 14px;
         margin-top: 8px;
         margin-bottom: 35px;
+        padding: 20px;
       } 
       .designdesc p {
         text-align: center;
