@@ -13,9 +13,13 @@
   src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
+    width: 100%;
     height: 100%;
     margin: 0;
     font-size: 20px;
@@ -81,8 +85,8 @@ body {
   grid-template-areas: 
     "leftsection1 rightsection1"; 
   padding: 20px 8%;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   min-width: 100vh;
   margin-bottom: 3%;
 }
@@ -155,6 +159,10 @@ body {
         }
 
 /* PortfolioCards CSS */
+.portfoliocards figcaption {
+  font-size: small;
+}
+
 .portfoliocards {
   display: grid; 
   grid-auto-flow: column; 
@@ -212,7 +220,7 @@ body {
 }
 /* Footer CSS */
 .footer {
-
+  display: flex;
 }
 
 /* every bit of code below will be used as testers */
