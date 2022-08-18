@@ -110,6 +110,8 @@ body {
       }
           .infocard h4 {
             align-self: flex-start;
+            font-size: 3.1rem;
+            margin-top: 0;
           }
           .infocard p {
             align-self: flex-start;
