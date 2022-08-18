@@ -232,6 +232,7 @@ body {
     "design"; 
     width: 100%;
     height: auto;
+    margin: auto 0;
 }
 
       .Web-development {
@@ -246,7 +247,7 @@ body {
       }
           #lang {
             display: block;
-            margin: 0;
+            margin: auto;
           }
 
       .Debugging {
@@ -261,7 +262,7 @@ body {
       }
           #bug {
             display: block;
-            margin: 0;
+            margin: auto;
           }
 
       .Design {
@@ -276,7 +277,7 @@ body {
       }
           #design1 {
             display: block;
-            margin: 0;
+            margin: auto; 
           }
 
 /* Footer CSS */
