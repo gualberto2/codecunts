@@ -225,35 +225,60 @@ body {
   grid-auto-rows: 1fr; 
   grid-template-columns: 100%; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 2%; 
+  gap: 1%px 2%; 
   grid-template-areas: 
     "web-development"
     "debugging"
     "design"; 
+    width: 100%;
+    height: auto;
 }
 
-      .web-development {
+      .Web-development {
         border: 1px solid white;
         justify-self: center; 
         align-self: center; 
         grid-area: web-development; 
+        width: 35%;
       }
-          .languagesimg {
+      .languages p {
+        text-align: center;
+      }
+          #lang {
             display: block;
-
+            margin: 0;
           }
-      .debugging {
+
+      .Debugging {
         border: 1px solid white;
         justify-self: center; 
         align-self: center; 
         grid-area: debugging; 
+        width: 35%;
       }
-      .design {
+      .bugdesc{
+        text-align: center;
+      }
+          #bug {
+            display: block;
+            margin: 0;
+          }
+
+      .Design {
         border: 1px solid white;
         justify-self: center; 
         align-self: center; 
         grid-area: design; 
+        width: 35%;
       } 
+      .designdesc p {
+        text-align: center;
+      }
+          #design1 {
+            display: block;
+            margin: 0;
+          }
+
 /* Footer CSS */
 .footer {
 
