@@ -41,7 +41,7 @@ body {
   align-self: flex-start;
   align-content: center;
   padding: 8px;
-  height: 48px;
+  height: 54px;
   min-height: 0;
   min-width: 100vh; 
   flex: 0 0 auto;
@@ -241,11 +241,11 @@ body {
         align-self: center; 
         grid-area: web-development; 
         width: 35%;
-        background: hsla(20, 100%, 73%, 1);
-        background: radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        background: -moz-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        background: -webkit-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA375", endColorstr="#FF855C", GradientType=1 );
+        background: hsla(15, 100%, 92%, 1);
+        background: radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        background: -moz-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        background: -webkit-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE0D6", endColorstr="#FFF0EB", GradientType=1 );
         border-radius: 14px;
         margin-top: 35px;
         margin-bottom: 8px;
@@ -257,6 +257,7 @@ body {
           #lang {
             display: block;
             margin: auto;
+            border-bottom: 1px solid gray;
           }
 
       .Debugging {
@@ -265,11 +266,11 @@ body {
         align-self: center; 
         grid-area: debugging; 
         width: 35%;
-        background: hsla(20, 100%, 73%, 1);
-        background: radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        background: -moz-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        background: -webkit-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA375", endColorstr="#FF855C", GradientType=1 );
+        background: hsla(15, 100%, 92%, 1);
+        background: radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        background: -moz-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        background: -webkit-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE0D6", endColorstr="#FFF0EB", GradientType=1 );
         border-radius: 14px;
         padding: 20px;
       }
@@ -279,6 +280,7 @@ body {
           #bug {
             display: block;
             margin: auto;
+            border-bottom: 1px solid gray;
           }
 
       .Design {
@@ -287,11 +289,11 @@ body {
         align-self: center; 
         grid-area: design; 
         width: 35%;
-        background: hsla(20, 100%, 73%, 1);
-        background: radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        background: -moz-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        background: -webkit-radial-gradient(circle, hsla(20, 100%, 73%, 1) 1%, hsla(15, 100%, 68%, 1) 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA375", endColorstr="#FF855C", GradientType=1 );
+        background: hsla(15, 100%, 92%, 1);
+        background: radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        background: -moz-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        background: -webkit-radial-gradient(circle, hsla(15, 100%, 92%, 1) 0%, hsla(15, 100%, 96%, 1) 98%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE0D6", endColorstr="#FFF0EB", GradientType=1 );
         border-radius: 14px;
         margin-top: 8px;
         margin-bottom: 35px;
@@ -303,12 +305,17 @@ body {
           #design1 {
             display: block;
             margin: auto; 
+            border-bottom: 1px solid gray;
           }
 
 /* Footer CSS */
 .footer {
-
+  background-color: #2d0b00;
 }
+
+          .footer p {
+            color: white;
+          }
 
 /* every bit of code below will be used as testers */
 .leftsection1,
