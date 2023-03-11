@@ -9,34 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Crimson+Pro:wght@300;400&family=Encode+Sans+SC:wght@200;500&family=Libre+Barcode+128+Text&display=swap;family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-thick-arrow-pointing-down-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-thick-arrow-pointing-down-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-thick-arrow-pointing-down-96.png">
 </head>
-<body>
-    <nav class="navi backgroundprimary">
+<body class="backgroundgray300">
+    <nav class="navi">
         <div class="titnavi">
             <!--hamburger | codecunts logo-->
-            <h2><a href="">CodeCunts</a></h2>
+            <h2><a class="whitetext" href="">CodeCunts</a></h2>
         </div>
         <div class="navutil">
             <!--utilities-->
-            <p><a href="">About</a></p>
-            <p><a href="">Fun</a></p>
-            <p><a href="">Projects</a></p>
-            <p><a href="">Team</a></p>
+            <p><a class="whitetext" href="">About</a></p>
+            <p><a class="whitetext" href="">Fun</a></p>
+            <p><a class="whitetext" href="">Projects</a></p>
+            <p><a class="whitetext" href="">Team</a></p>
         </div>
         <div class="quotenavi">
             <!--get quote-->
-            <h3><a href="">Let's Talk</a></h3>
+            <h3><a class="whitetext" href="">Let's Talk</a></h3>
         </div>
     </nav>
-    <section class="sec1 backgroundprimary">
-        <!--use this section for the mian title and an image-->
-            <h1>Welcome to CodeCunts' Portfolio Site.</h1>
-            <p>We make it seemless to create anything digital.
-            We are a team of Software Engineers, Full Stack Web Developers and App Developers.
-            We are self-taught and are contionously learning and applying our knowledge.
-            The combined knowledge of Development, Marketing, and Design we create A1 fire asf websites.</p>
+    <section class="sec1">
+        <div class="sec1container">
+            <h1 class="h1">WE MAKE IT SEEMLESS TO CREATE ANYTHING DIGITAL. WELCOME TO THE CODECUNTS' WEBSITE,</h1>
+            <p class="desc">get code from a cunt. These cunts know whatsup.</p>
+            <button class="blacktext"><a href="" class="butta buttsec1 blacktext">Get a Free Consultation</a></button>
+            <a href="" class="arrowdown flexcenter"><img src="resources/imgs/Web/icons8-thick-arrow-pointing-down-material-outlined-96.png"/></a>
+        </div>
     </section>
-    <section class="sec2">
+    <section class="sec2 backgroundwhite">
         <!--use this section for our mission statement and what we do-->
         <div class="getstarted ">
             <h4 class="">GET STARTED WITH</h4>
@@ -49,27 +52,38 @@
             <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nobis nisi? Animi, molestias nulla!</p>
         </div>
         <div class="ourmission backgroundmissionimg">
-            <h2>OUR MISSION</h2>
+            <h2 class="">OUR MISSION</h2>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos nam ullam perspiciatis aliquid!</p>
         </div>
     </section>
     <section class="sec3">
+        <h2 class="whitetext">MEET THE TEAM</h2>
         <!--use this section to meet the team-->
-        <div class="teamcard">
-            <!--arthur-->
-            <img src="" alt="">
-            <h3>Hi, I am Arthur 👋</h3>
-        </div>
-        <div class="teamcard">
-            <!--ben-->
-            <h3>Hi, I am Ben 👋</h3>
-        </div>
-        <div class="teamcard">
-            <!--elijah-->
-            <h3>Hi, I am Elijah 👋</h3>
-        </div>
+        <!-- <div class="teamcards"> -->
+            <div class="teamcard">
+                <!--arthur-->
+                <img src="resources/imgs/blackcoder.jpeg" alt="">
+                <h3 class="whitetext">Hi, I am Arthur 👋</h3>
+                <p class="whitetext card_preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime libero consequatur nostrum molestiae velit nulla amet voluptatibus quae, quis architecto blanditiis alias maiores illum dolor omnis quas quam. Accusantium, minus doloremque labore, tempore repudiandae maxime eius pariatur, similique quam magnam praesentium voluptatibus quis veritatis nemo natus ratione.</p>
+                <button class="continue_reading">Continue Reading</button>
+            </div>
+            <div class="teamcard">
+                <!--ben-->
+                <img src="resources/imgs/blackcoder.jpeg" alt="">
+                <h3 class="whitetext">Hi, I am Ben 👋</h3>
+                <p class="whitetext card_preview-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt sed iusto dolorem vero provident delectus explicabo consequuntur iure magnam neque, alias porro libero odit eligendi accusamus temporibus odio totam quae cumque voluptates. Odio sint neque eos quos totam minima, molestiae itaque illo. Inventore asperiores assumenda autem?</p>
+                <button class="continue_reading">Continue Reading</button>
+            </div>
+            <div class="teamcard">
+                <!--elijah-->
+                <img src="resources/imgs/blackcoder.jpeg" alt="">
+                <h3 class="whitetext">Hi, I am Elijah 👋</h3>
+                <p class="whitetext card_preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rerum ullam eveniet at. Aspernatur quibusdam cumque itaque similique deleniti minima quia dolore fuga mollitia aliquam, odio labore aliquid porro quidem quod velit ad obcaecati? Architecto eveniet adipisci odit, ex ad dicta asperiores at cumque, quia, laborum accusantium!</p>
+                <button class="continue_reading ">Continue Reading</button>
+            </div>
+        <!-- </div> -->
     </section>
-    <section class="sec4">
+    <section class="sec4 backgroundwhite">
         <!--useful section, probably some small quotes or something-->
         <!--projects on the left-->
         <div class="projectscarousel">

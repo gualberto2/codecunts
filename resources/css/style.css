@@ -7,18 +7,54 @@
   font-family: "Hind";
   src: url(../fonts/Hind/Fonts/OTF/Hind-Regular.otf);
 }
+@font-face {
+  font-family: "KhandSemi";
+  src: url(../fonts/Khand/Fonts/OTF/Khand-Medium.ttf);
+}
+
+body{
+  max-width: 1500px;
+  margin: 0 auto;
+  display: block;
+}
 
 :root {
-  --clr-primary-1: #baf2d8;
-  --clr-primary-2: #D7F3E6;
+  /* --clr-primary-1: #baf2d8;
+  --clr-primary-1-contrast: #43DB94;
+  --clr-primary-1-highlight: #109648;
+  --clr-primary-1-emphasis:#17DE6A;
+  --clr-primary-2: #65E2A7;
+  --clr-primary-3: #D7F3E6;
+  --clr-black-foreground1: #484349;
+  --clr-black-foreground2: #4A4A4A; */
 
-  --fc-body: #d0d0d0;
+  /* --fc-body: #d0d0d0;
   --fc-white: #EBEBEB;
   --fc-black: #474747;
-  --fc-grey: #9E9E9E;
+  --fc-grey: #9E9E9E; */
 
-  --ff-headers: "Hind";
-  --ff-body: "Khand";
+  --clr-primary-300: #EE8A50;
+  --clr-primary-600: #EC834B;
+  --clr-primary-900: #F4BFA4;
+
+  --clr-gray-300:#464652;
+  --clr-gray-600:#676779;
+  --clr-gray-900:#B1B1BB;
+  
+  --bg-black:#25252B;
+  --bg-white: #FBFBFD;
+
+  --clr-black: #25252B;
+  --clr-white:#FBFBFD;
+
+  --clr-darkblue: #112A46;
+  --clr-lightblue: #BAD7F2;
+ 
+
+  --ff-body: "Hind";
+  --ff-headers: "Khand";
+  --ff-semiboldkhand: 'KhandSemi';
+  --ff-semiboldhind: "HindSemi";
 }
 
 /* util for testing*/
@@ -26,6 +62,7 @@
   border: 4px solid aqua;
 }
 
+/* Centering For Flexbox and grid */
 .gridcenter{
   justify-self: center;
   align-self: center;
@@ -36,43 +73,102 @@
   align-content: center;
 }
 
+/* Body Utility */
 .bodytext{
   color: var(--fc-body)
 }
-
-.backgroundprimary{
-  background-color: var(--clr-primary-1);
+.blacktext{
+  color: var(--clr-black)
+}
+.whitetext{
+  color: var(--clr-white)
 }
 
-.backgroundmissionimg {
-  background-image: url(../imgs/dababay.png);
+.backgroundprimary300{
+  background-color: var(--clr-primary-300);
+}
+.backbroundprimary600{
+  background-color: var(--clr-primary-600)
+}
+.backgroundprimary900{
+  background-color: var(--clr-primary-900);
+}
+.backgroundgray300{
+  background-color: var(--clr-gray-300)
+}
+.backgroundgray600{
+  background-color: var(--clr-gray-600);
+}
+.backgroundgray900{
+  background-color: var(--clr-gray-900);
+}
+.backgroundblack{
+  background-color: var(--bg-black);
+}
+.backgroundwhite{
+  background-color: var(--bg-white)
 }
 
+.ff_body{
+  font-family: var(--ff-semiboldhind);
+}
+/*  */
+/* General CSS stuff */
 * {
   box-sizing: border-box;
 }
 
 body, p{
   margin: 0;
-  font-family: var(--ff-headers);
+  font-family: var(--ff-body);
   color: var(--fc-black)
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: var(--ff-body)
+  font-family: var(--ff-headers)
 }
 
 body {
-  background-color: rgba(255, 240, 235, 1);
+  /* background-color: #FFF0EB; */
+  background-color: var(--fc-white);
 }
-
 
 a{
   text-decoration: none;
   color: black;
 }
 
+body {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+h2, h3, p {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section{
+  padding: 3rem 0;
+}
+
+/* Nav */
 nav{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
@@ -103,61 +199,77 @@ nav{
   justify-self: center; 
 }
 
-body {
-  /*font-family:;*/
+.titgrid {
+  grid-area: titgrid; 
+}
+
+/* Section 1 */
+.sec1container{
+  padding: 0 2.5em;
+}
+.sec1 h1, .sec1 p {
+  color: var(--clr-white)
+}
+.h1{
+  /* padding: 0em 1em; */
+  font-size: 2.6em;
+  font-family: var(--ff-headers);
+  margin: 0 !important;
+  letter-spacing: 0.009em;
+}
+
+.desc{
+  margin: 0 !important;  
   font-weight: 400;
-  font-size: 1.3125rem;
-  line-height: 1.6;
+  font-family: var(--ff-semiboldkhand);
+  font-size: 1.6em;
+  line-height: 1.001em; 
 }
 
-h1, h2, h3 {
-  /*font-family: var(--ff-accent);*/
-  font-weight: 900;
-  line-height: 1;
-  margin-bottom: 1em;
+.buttsec1 { 
+  margin-top: 0.7em;
+  padding-top: 0.8em;
+  z-index: 2; 
+}
+.butta{
+  margin-top: 2em;
 }
 
-h2, h3, p {
-  margin-bottom: 1em;
+.arrowdown {
+  display: flex;
+}
+.arrowdown img {
+  padding: 2em 0em
+
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.text-center {
-  text-align: center;
-}
-
-section{
-  padding: 3rem 0;
-}
-
-.sec1 {
-  display: grid;
-  grid-template-rows: 3(1fr);
-  grid-template-columns: 7(1fr);
-  
-}
-
+/* Sec 2 */
 .sec2{
   display: grid;
   grid-template-areas: 
   "get learn our";
-  grid-template-columns: 29.5% 29.5% 40%;
+  grid-template-columns: 30% 30% 40%;
   grid-template-rows: 1fr;
   padding: 2em 4em;
-  gap: 0% .5%
+  gap: 0% 0%
 }
 
+.sec2 h3, .sec2 p{
+  color: var()
+}
+/* .{
+  color: var(--clr-primary-600);
+}
+.{
+  color:var(--clr-primary-300)
+} */
 .getstarted{
   padding: 0.8em 1em;
 }
 
 .getstarted h4, .learnmore h4 {
   margin: 0;
-  line-height: 1.05em
+  line-height: 1em
 }
 
 .learnmore{
@@ -171,11 +283,143 @@ section{
   justify-self: center; 
   align-self: center;
 }
-
-.sec3{
-
+.ourmission h2 {
+  margin:0;
+  margin-bottom: 0.3em
+}
+.sec2 p{
+  line-height: 1.03em;
 }
 
-.sec4{
 
-}x`
+/* Secton 3 */
+.sec3{
+  padding: 2em 0.7em;
+}
+.sec3 h2{
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+.sec3 h3{
+  padding-top: 0.3em;
+  margin: 0;
+}
+
+.card_preview-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.continue_reading{
+  background-color: var(--clr-primary-300);
+  border-style: none;
+  margin: 0.25em 1.75em;
+  padding: 0.3em 0.5em
+}
+
+.teamcard{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-top: 1.3em; 
+}
+.teamcard button{
+  font-family: var(--ff-semiboldkhand)
+}
+.teamcard p{
+  word-spacing: 0.040em;
+  line-height: 1.01em;
+}
+/* Section 4 */
+.sec4 {
+  display: grid;
+  grid-template-areas: 
+  "get learn our";
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 1fr;
+  padding: 2em 4em;
+  gap: 0% 0%
+}
+
+
+
+/* Media Queries */
+
+/* Mobile Phones Over 375PX */
+@media (max-width: 775px) {
+/* Nav */
+
+nav{
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 0px 0%; 
+  grid-template-areas: 
+  "tit"
+  "util"
+  "but";
+  grid-auto-flow: row;
+}
+
+.navutil{
+  justify-content: center;
+}
+  .navutil p{
+    padding: 0em 0.5em
+  }
+
+  /* Sec 2 */
+  .sec2{
+    grid-auto-flow: column;
+    grid-template-areas: 
+    "get" 
+    "learn" 
+    "our";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .getstarted, .learnmore, .ourmission {
+    padding: 0;
+    padding-top: 0.8em;
+  }
+
+  .sec2{
+    padding: 1em 0.8em
+  }
+ /* Sec3 */
+ .sec3{
+  padding: 2.47em 1.3em;
+ }
+ /* Sec4 */
+ .sec4{
+  padding: 1em 0.8em;
+  grid-auto-flow: row;
+ }
+ .whyus, .ourstory, .projectcarousel{
+  padding: 0;
+  padding-top: 0.8em;
+
+ }
+}
+
+
+/* Tablet sizes (probbaly wont be used since it should scale correctly  */
+@media (min-width: 775px){
+  /* nav */
+  .h1 {
+    padding-top:2em;
+  }
+  /* Sec3 */
+  .sec3{
+    max-width: 800px;
+    margin: 0 auto
+  }
+  .teamcard{
+    flex-direction: column; 
+  }
+  .teamcard img{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
