@@ -12,10 +12,17 @@
   src: url(../fonts/Khand/Fonts/OTF/Khand-Medium.ttf);
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
 body{
   max-width: 1500px;
   margin: 0 auto;
   display: block;
+
 }
 
 :root {
@@ -73,6 +80,10 @@ body{
   align-content: center;
 }
 
+.centersvg{
+  margin: 0 auto;
+  display: block;
+}
 /* Body Utility */
 .bodytext{
   color: var(--fc-body)
@@ -170,6 +181,7 @@ section{
 
 /* Nav */
 nav{
+  height: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr; 
@@ -177,7 +189,9 @@ nav{
   grid-template-areas: 
   "tit util but";
   grid-auto-flow: column;
-
+  width: 100%;
+  /* margin-bottom: 1em; */
+  top: 0;
 }
 
 .titnavi{
@@ -204,6 +218,30 @@ nav{
 }
 
 /* Section 1 */
+.group {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  margin: 0;
+  /* background: linear-gradient(135deg, #295fd5, #9d8ce0); */
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.item {
+  width: 8em;
+  height: 17em;
+  /* background-position: center; */
+  /* background-size: 75vh; */
+  margin: 0;
+  padding: 0;
+  border-radius: 3vw;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .sec1container{
   padding: 0 2.5em;
 }
@@ -235,12 +273,8 @@ nav{
   margin-top: 2em;
 }
 
-.arrowdown {
-  display: flex;
-}
-.arrowdown img {
-  padding: 2em 0em
-
+.sec1 svg{
+  margin-top: 1.5em;
 }
 
 /* Sec 2 */
@@ -265,6 +299,7 @@ nav{
 } */
 .getstarted{
   padding: 0.8em 1em;
+  grid-area: get;
 }
 
 .getstarted h4, .learnmore h4 {
@@ -276,12 +311,14 @@ nav{
   padding: 0.8em 1em;
   justify-self: center; 
   align-self: center;
+  grid-area: learn;
 }
 
 .ourmission{
   padding: 0.6em 3em;
   justify-self: center; 
   align-self: center;
+  grid-area: our;
 }
 .ourmission h2 {
   margin:0;
@@ -335,8 +372,8 @@ nav{
 .sec4 {
   display: grid;
   grid-template-areas: 
-  "get learn our";
-  grid-template-columns: 30% 30% 40%;
+  "";
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   padding: 2em 4em;
   gap: 0% 0%
@@ -348,34 +385,45 @@ nav{
 
 /* Mobile Phones Over 375PX */
 @media (max-width: 775px) {
+body{
+  padding-top: 4em;
+}
+
 /* Nav */
 
 nav{
   display: grid;
   grid-template-columns: 1fr; 
-  grid-template-rows: repeat(3, 1fr); 
+  grid-template-rows: 1fr; 
   gap: 0px 0%; 
   grid-template-areas: 
-  "tit"
-  "util"
-  "but";
+  "tit";
   grid-auto-flow: row;
+  position: fixed;
 }
 
+.titnavi{
+  justify-content: center;
+  padding-top: 0.8em;
+}
 .navutil{
   justify-content: center;
+  display: none;
 }
   .navutil p{
     padding: 0em 0.5em
   }
+.quotenavi{
+  display:none;
+}
 
   /* Sec 2 */
   .sec2{
     grid-auto-flow: column;
     grid-template-areas: 
-    "get" 
+    "our" 
     "learn" 
-    "our";
+    "get";
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
