@@ -57,7 +57,7 @@ body{
   --clr-lightblue: #BAD7F2;
  
   --fs-tiny: 1em;
-  --fs-medium: 1.6em;
+  --fs-medium: 1.4em;
   --fs-large: 2em;
   --fs-extralarge: 2.3em;
   --fs-huge: 2.8em; 
@@ -146,7 +146,7 @@ body{
   box-sizing: border-box;
 }
 
-body, p{
+body, p, button{
   margin: 0;
   font-family: var(--ff-body);
   color: var(--fc-black);
@@ -157,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: var(--ff-headers)
 }
+
 
 body {
   /* background-color: #FFF0EB; */
@@ -185,7 +186,7 @@ h4 {
   font-size:var(--fs-huge)
 }
 
-h2, h3, p {
+h2, h3 {
   margin-bottom: 1em;
   font-size: var(--fs-large)
 }
@@ -279,18 +280,14 @@ nav{
 
 /* Sec 2 */
 .sec2{
-  display: grid;
-  grid-template-areas: 
-  "elastic elastic"
-  "empty empty";
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   padding: 2em 4em;
-  gap: 0% 0%
 }
 /* Elastic accordian v1  */
 .container{
   grid-area: elastic;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,14 +304,14 @@ nav{
 .gallery-container{
   padding: 75px 0;
   margin: 0 auto;
-  width: 900px;
+  width: 50em;
 }
 
 .gallery-container .gallery-wrap{
   display: flex;
   flex-direction: row;
   width:100%;
-  height: 5em;
+  height: 15em;
 }
 
 .gallery-container .gallery-wrap .item {
@@ -354,7 +351,24 @@ flex: 7;
 
 /* Secton 3 */
 .sec3{
-  padding: 2em 0.7em;
+  /* padding: 2em 0.7em; */
+}
+.gallery-container .gallery-wrap .item {
+  -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+     filter: grayscale(100%); 
+}
+.gallery-container .gallery-wrap .item:hover {
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+ -ms-filter: grayscale(0%);
+     filter: grayscale(0%); 
+}
+.teamcard button {
+  white-space: nowrap;
 }
 .sec3 h2{
   text-align: center;
@@ -378,11 +392,16 @@ flex: 7;
   padding: 0.3em 0.5em
 }
 
-.teamcard{
+.teamcards{
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  padding-top: 1.3em; 
+  gap: 3em;
+}
+
+.teamcard{
+  padding: 1.8em 1em;
+  background-color: var(--clr-gray-600);
 }
 .teamcard button{
   font-family: var(--ff-semiboldkhand)
@@ -476,20 +495,7 @@ nav{
   width:auto;
   height: 30em;
 }
-.gallery-container .gallery-wrap .item {
-  -webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
- -ms-filter: grayscale(100%);
-     filter: grayscale(100%); 
-}
-.gallery-container .gallery-wrap .item:hover {
--webkit-filter: grayscale(0%);
--moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
- -ms-filter: grayscale(0%);
-     filter: grayscale(0%); 
-}
+
 .ourmission {
   grid-area: empty;
 }
@@ -498,7 +504,9 @@ nav{
  /* Sec3 */
  .sec3{
   padding: 2.47em 1.3em;
+  flex-direction: column;
  }
+ 
  /* Sec4 */
  .sec4{
   padding: 1em 0.8em;
