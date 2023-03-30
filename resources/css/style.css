@@ -19,7 +19,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body{
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: inline-block;
 }
@@ -89,6 +89,11 @@ body{
   margin: 0 auto;
   display: block;
 }
+
+.text-center{
+  text-align: center;
+}
+
 /* Body Utility */
 .bodytext{
   color: var(--fc-body)
@@ -187,7 +192,6 @@ h4 {
 }
 
 h2, h3 {
-  margin-bottom: 1em;
   font-size: var(--fs-large)
 }
 
@@ -284,6 +288,10 @@ nav{
   flex-direction: column;
   padding: 2em 4em;
 }
+.checkitout{
+  margin:0 0 0.6em;
+  
+}
 /* Elastic accordian v1  */
 .container{
   grid-area: elastic;
@@ -302,7 +310,7 @@ nav{
 }
 
 .gallery-container{
-  padding: 75px 0;
+  padding: 0px 0;
   margin: 0 auto;
   width: 50em;
 }
@@ -336,8 +344,23 @@ flex: 7;
 .gallery-container .item:nth-of-type(3) {
   background-image: url(../imgs/el.png)
 }
+.gallery-container .gallery-wrap .item {
+  -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+     filter: grayscale(100%); 
+}
+.gallery-container .gallery-wrap .item:hover {
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+ -ms-filter: grayscale(0%);
+     filter: grayscale(0%); 
+}
 
 .ourmission{
+  margin-top: 1em;
   padding: 0.6em 3em;
   justify-self: center; 
   align-self: center;
@@ -353,20 +376,7 @@ flex: 7;
 .sec3{
   /* padding: 2em 0.7em; */
 }
-.gallery-container .gallery-wrap .item {
-  -webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
- -ms-filter: grayscale(100%);
-     filter: grayscale(100%); 
-}
-.gallery-container .gallery-wrap .item:hover {
--webkit-filter: grayscale(0%);
--moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
- -ms-filter: grayscale(0%);
-     filter: grayscale(0%); 
-}
+
 .teamcard button {
   white-space: nowrap;
 }
@@ -394,35 +404,52 @@ flex: 7;
 
 .teamcards{
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  gap: 3em;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .teamcard{
-  padding: 1.8em 1em;
+  padding: 2.3em 1.8em 1.4em;
   background-color: var(--clr-gray-600);
 }
-.teamcard button{
-  font-family: var(--ff-semiboldkhand)
+.teamcard img{
+  margin-bottom: 24px;
+}
+.teamcard h3{
+  margin-bottom: 8px;
 }
 .teamcard p{
   word-spacing: 0.040em;
   line-height: 1.01em;
+  margin-bottom: 16px;
+}
+.teamcard button{
+  font-family: var(--ff-semiboldkhand)
 }
 /* Section 4 */
 .sec4 {
-  display: grid;
-  grid-template-areas: 
-  "";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  /* display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center; */
   padding: 2em 4em;
-  gap: 0% 0%
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10% 90%; 
+  grid-template-areas: 
+  "Title1 Title2"
+  "Text1 Text2";
+
 }
 
+.whyus h3, .ourstory h3{
+  margin-bottom: 0.3em
+}
 
-
+.whyus{
+  /* margin-bottom: 0.5em; */
+}
 /* Media Queries */
 
 /* Mobile Phones Over 375PX */
@@ -462,25 +489,17 @@ nav{
 /* sec 1 */
  
   /* Sec 2 */
-  .sec2{
-    grid-auto-flow: column;
-    grid-template-areas: 
-    "elastic" 
-    "empty";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr ;
-  }
   .ourmission {
-    padding: 1em 0.8em;
+    padding: 1em 1.5em;
   }
 
   .sec2{
-    padding: 1em 0.8em
+    padding: 1em 1.5em
   }
    /* Elastic accordian v1 */
 .container{
   flex-direction: column;
-  grid-area: elastic;
+  /* margin-bottom: 24px; */
 }
 .checkitout{
   margin: 0;
@@ -498,6 +517,7 @@ nav{
 
 .ourmission {
   grid-area: empty;
+  margin-top: 0;
 }
 
 
@@ -507,15 +527,17 @@ nav{
   flex-direction: column;
  }
  
+ .teamcards{
+  gap:3em;
+ }
  /* Sec4 */
  .sec4{
   padding: 1em 0.8em;
-  grid-auto-flow: row;
+  flex-direction: column;
  }
- .whyus, .ourstory, .projectcarousel{
+ .whyus, .ourstory{
   padding: 0;
   padding-top: 0.8em;
-
  }
 }
 
@@ -528,8 +550,8 @@ nav{
   }
   /* Sec3 */
   .sec3{
-    max-width: 800px;
-    margin: 0 auto
+    /* max-width: 800px;
+    margin: 0 auto */
   }
   .teamcard{
     flex-direction: column; 
